@@ -1,0 +1,76 @@
+:root{
+    /* Color */
+    /* home page */
+    --text-color: #656567; /* navbar (not slescted text + footer) */
+    --title-color: #1A1A1A; /* and selected */
+    --smallTitle1-color: #98989A;
+    --subtitle-color: #262626;  /* navbar (slescted and contact support text color + buttons text +dark background) */
+    --yellowBG-color: #FFD400;
+    --greyBG-color: #F7F7F8; /* navbar not slescted bg */
+    --lightGreyBG-color: #F1F1F3; /* (filtter products page) */
+    --lightGreytext-color: #E4E4E7; /* numbers */
+    /* products page */
+    --filtterNS-color: #4C4C4D;
+    --subTitle2-color: #333333;
+
+    /* Font */
+    --font-primary: 'Manrope', sans-serif;
+
+    /* Font Weights */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+
+    /* Font Sizes */
+    --fs-title: 2rem;           
+    --fs-subtitle: 1.5rem;      
+    --fs-body: 1rem;  
+    --fs-48:  3rem ;   
+    --fs-34:2.125rem ;
+    --fs-20:1.25rem ;
+    --fs-18:1.125rem;
+    --fs-28:1.75rem;
+    --fs-14:0.875rem;
+    --fs-38:2.75rem;
+
+}
+
+
+/* mainTitle*/
+h1, .mainTitle {
+    font-size: var(--fs-48);
+    font-weight: var(--fw-semibold);
+}
+
+/* subTitle*/
+h2, .subTitle {
+    font-size: var(--fs-subtitle);
+    font-weight: var(--fw-medium);
+}
+
+/* Paragraph */
+p, .paragraph {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-regular);
+}
+
+/*laptop*/
+@media (min-width: 390px) and (max-width: 1440px) {
+    h1, .mainTitle{
+        font-size: var(--fs-38);
+    }
+    p ,.paragraph{
+        font-size: var(--fs-body);
+    }
+
+}
+
+/*mobile*/
+@media (max-width: 390px) {
+    h1, .mainTitle{
+        font-size: var(--fs-28);
+    }
+    p ,.paragraph{
+        font-size: var(--fs-14);
+    }
+}
