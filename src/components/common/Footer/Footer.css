@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Footer{
+    margin: 0 auto;
+    padding: 0px 162px;
+    border-top: 1px solid #F1F1F3;
+    border-bottom: 1px solid #F1F1F3;
+    
+.FooterTop{
+    height: 368px;
+    display: flex;
+    justify-content: space-between;
+.FooterForm{
+    width: 23.33333vw;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-right: 4.1666vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img{
+        width: 5.208vw;
+        
+    }
+    input{
+        width: 16.822vw;
+        height: 59px;
+        padding-left: 20px;
+        margin-right: 10px;
+        background-color: #FCFCFD;
+        border-radius: 32px;
+        border: 1px solid #F1F1F3;
+        font-family: Manrope;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 18px;
+        color: #98989A;
+    }
+    button{
+        width: 7.6562vw;
+        height: 59px;
+        background-color: #FFD400;
+        color: #262626;
+        border: none;
+        border-radius:  32px;
+        font-family: Manrope;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 18px;
+    }
+}
+.FooterRight{
+    width: 53.9583vw;
+    padding: 80px 0px 80px 80px;
+    border-left: 1px solid #F1F1F3;
+    display: flex;
+    justify-content: space-between;
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+        p{
+            font-family: Manrope;
+            font-weight: 400;
+            font-size: 18px;
+            color: #656567;
+            padding-top: 18px;
+        }
+        h6{
+            font-family: Manrope;
+            font-weight: 500;
+            font-size: 20px;
+            color: #262626;
+            padding-bottom: 20px;
+
+        }
+    }
+}
+}
+}
