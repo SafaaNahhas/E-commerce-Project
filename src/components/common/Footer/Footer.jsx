@@ -40,6 +40,18 @@ function Footer() {
                     </ul>
                 </div>
             </div>
+            <div className="FooterBottom">
+                <div className="left">
+                    <p>Terms & Conditions</p>
+                    <span>Privacy Policy</span>
+                </div>
+                <div className="middle">
+                    <img src="/public/assets/img/footer/FB_Btn.png" alt="FacebookIcon" />
+                    <img src="/public/assets/img/footer/TW_Btn.png" alt="TwitterIcon" />
+                    <img src="/public/assets/img/footer/Li_Btn.png" alt="LinkedInIcon" />
+                </div>
+                <p className='right'>© 2024 Klothink. All rights reserved.</p>
+            </div>
         </div>
     )
     

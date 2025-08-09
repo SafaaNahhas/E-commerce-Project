@@ -7,8 +7,10 @@
     --subtitle-color: #262626;  /* navbar (slescted and contact support text color + buttons text +dark background) */
     --yellowBG-color: #FFD400;
     --greyBG-color: #F7F7F8; /* navbar not slescted bg */
+    --light-whiteBG: #FCFCFD; /* input in footer */
     --lightGreyBG-color: #F1F1F3; /* (filtter products page) */
     --lightGreytext-color: #E4E4E7; /* numbers */
+    --white-color: #FFFFFF;
     /* products page */
     --filtterNS-color: #4C4C4D;
     --subTitle2-color: #333333;
@@ -55,7 +57,7 @@ p, .paragraph {
 }
 
 /*laptop*/
-@media (min-width: 390px) and (max-width: 1440px) {
+@media (max-width: 1440px) {
     h1, .mainTitle{
         font-size: var(--fs-38);
     }
@@ -66,7 +68,7 @@ p, .paragraph {
 }
 
 /*mobile*/
-@media (max-width: 390px) {
+@media (max-width: 670px) {
     h1, .mainTitle{
         font-size: var(--fs-28);
     }
