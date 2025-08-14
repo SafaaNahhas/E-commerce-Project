@@ -4,13 +4,27 @@ function Footer() {
         <div className='Footer'>
             <div className="FooterTop">
                 <div className="FooterForm">
-                    <img src="/public/assets/img/footer/logo.svg" alt="" />
+                    <div className="SmallScreens">
+                    <img className='Logo' src="/public/assets/img/footer/logo.svg" alt="" />
+                    <div className="Icons">
+                    <img src="/public/assets/img/footer/FB_Btn.png" alt="FacebookIcon" />
+                    <img src="/public/assets/img/footer/TW_Btn.png" alt="TwitterIcon" />
+                    <img src="/public/assets/img/footer/Li_Btn.png" alt="LinkedInIcon" />
+                </div>
+                </div>
+                <div>
                     <form action="">
                         <input type="text" placeholder='Enter Your Email'/>
                         <button type="submit">Subscribe</button>
                     </form>
+                    </div>
                 </div>
                 <div className="FooterRight">
+                    <div>
+                        <p>Home</p>
+                        <p>Products</p>
+                        <p>Contact</p>
+                    </div>
                     <ul>
                         <li><h6>Home</h6></li>
                         <li><p>Features</p></li>

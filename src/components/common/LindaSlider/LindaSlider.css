@@ -1,0 +1,68 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust as necessary */
+    margin: auto;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes full width */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%; /* Make images responsive */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: white; /* Adjust text color */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10; /* Ensure buttons are above other content */
+}
+
+.prev {
+    left: 10px; /* Position left */
+}
+
+.next {
+    right: 10px; /* Position right */
+}
+
+.indicator {
+    text-align: center;
+    margin-top: 10px; /* Space between slider and indicator */
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray; /* Inactive dot color */
+    margin: 0 5px; /* Space between dots */
+}
+
+.dot.active {
+    background-color: black; /* Active dot color */
+}
