@@ -1,53 +1,67 @@
-import React, { useState, useEffect } from 'react';
-import './LindaSlider.css'; // Import the CSS file for styling
+import React, { useState, useRef, useEffect } from "react";
+import Slider from "react-slick";
+import "./LindaSlider.css";
 
-const LindaSlider = ({ slides }) => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const slidesToShow = 4; // Number of slides to show at once
+// Custom arrow components
+function NextArrow({ onClick }) {
+  return <div className="arrow next" onClick={onClick}>&#8250;</div>;
+}
+function PrevArrow({ onClick }) {
+  return <div className="arrow prev" onClick={onClick}>&#8249;</div>;
+}
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentSlide((prev) => (prev + 1) % (slides.length - slidesToShow + 1));
-        }, 3000); // Change slide every 3 seconds
+export default function LindaSlider({ products }) {
+  const [progress, setProgress] = useState(0);
+  const sliderRef = useRef();
 
-        return () => clearInterval(interval); // Cleanup on unmount
-    }, [slides.length]);
+  const settings = {
+    centerMode: true,
+    centerPadding: "80px",
+    slidesToShow: 4,
+    infinite: true,
+    arrows: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    beforeChange: () => setProgress(0),
+    afterChange: () => animateProgress()
+  };
 
-    const changeSlide = (direction) => {
-        setCurrentSlide((prev) => {
-            if (direction === 'next') {
-                return Math.min(prev + 1, slides.length - slidesToShow);
-            } else {
-                return Math.max(prev - 1, 0);
-            }
-        });
-    };
+  const animateProgress = () => {
+    setProgress(0);
+    setTimeout(() => setProgress(100), 50);
+  };
 
-    return (
-        <div className="slider-container">
-            <button className="prev" onClick={() => changeSlide('prev')}>&#10094;</button>
-            <div className="slider">
-                <div className="slides" style={{transform: `translateX(-${currentSlide * (100 / slidesToShow)}%) `}}>
-                    {slides.map((slide, index) => (
-                        <div key={index} className="slide">
-                            <img src={slide.image} alt={`Slide ${index + 1}`} />
-                            <div className="overlay">
-                                <i className="icon">{slide.icon}</i>
-                                <p>{slide.description}</p>
-                                <p className="price">{slide.price}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+  useEffect(() => {
+    animateProgress();
+  }, []);
+
+  return (
+    <div className="slider-container">
+      <Slider ref={sliderRef} {...settings}>
+        {products.map((item) => (
+          <div key={item.id} className="product-card">
+            <div className="product-img-wrapper">
+              <img src={item.image} alt={item.name} />
+              <button className="cart-btn">🛒</button>
             </div>
-            <button className="next" onClick={() => changeSlide('next')}>&#10095;</button>
-            <div className="indicator">
-                {slides.map((_, index) => (
-                    <span key={index} className={`dot ${index >= currentSlide && index < currentSlide + slidesToShow ? 'active' : ''}`}></span>
-                ))}
-            </div>
-        </div>
-    );
-};
+            <div className="product-name">{item.name}</div>
+            <div className="product-price">{item.price}</div>
+          </div>
+        ))}
+      </Slider>
 
-export default LindaSlider;
+      <div className="progress-bar">
+        <div
+          className="progress-fill"
+          style={{
+            width: `${progress}%`,
+            transitionDuration: "3s"
+          }}
+        ></div>
+      </div>
+    </div>
+  );
+}

@@ -1,68 +1,84 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 .slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px; /* Adjust as necessary */
-    margin: auto;
+    
+  width: 90%;
+  margin: auto;
+  position: relative;
 }
 
-.slider {
-    overflow: hidden;
+.product-card {
+  text-align: left;
 }
 
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+.product-img-wrapper {
+  background-color: var(--greyBG-color);
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
 }
 
-.slide {
-    min-width: 100%; /* Each slide takes full width */
-    transition: opacity 0.5s ease-in-out;
+.product-img-wrapper img {
+  width: 100%;
+  height: auto;
 }
 
-.slide img {
-    width: 100%; /* Make images responsive */
+.cart-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: var(--yellowBG-color);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.overlay {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    color: white; /* Adjust text color */
+.product-name {
+    margin-top: 10px;
+    font-weight: var(--fw-SemiBold);
+    font-size: var(--fs-20);
+    color: var(--subtitle-color);
+
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 10; /* Ensure buttons are above other content */
+.product-price {
+  color: var(--filtterNS-color);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-medium);
 }
 
-.prev {
-    left: 10px; /* Position left */
+.arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  background: var(--white-color);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.next {
-    right: 10px; /* Position right */
+.arrow.prev {
+  left: -15px;
 }
 
-.indicator {
-    text-align: center;
-    margin-top: 10px; /* Space between slider and indicator */
+.arrow.next {
+  right: -15px;
 }
 
-.dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: gray; /* Inactive dot color */
-    margin: 0 5px; /* Space between dots */
+.progress-bar {
+    height: 7px;
+    background: var(--lightGreytext-color);
+    margin-top: 15px;
 }
 
-.dot.active {
-    background-color: black; /* Active dot color */
+.progress-fill {
+  height: 100%;
+  background: var(--subtitle-color);
+  width: 0%;
 }

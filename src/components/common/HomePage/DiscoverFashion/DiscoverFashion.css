@@ -1,4 +1,3 @@
-
 .DiscoverFashionHeader{
     padding: 0 162px;
     margin-bottom: 80px;
@@ -51,10 +50,13 @@ button{
 }
 }
 .Choose{
-    padding: 30px 162px;
-    border-width: 1px, 0px, 1px, 0px;
+    padding: 30px 0px;
+    margin-left: 162px;
+    margin-right: 162px;
+    border-width: 1px 0px 1px 0px;
     border-style: solid;
     border-color: var(--lightGreyBG-color);
+    margin-bottom: 80px;
 
 
 .button-group{
@@ -133,7 +135,10 @@ button{
 }
 }
 .Choose{
-    padding: 24px 80px;
+    margin-bottom: 60px;
+    padding: 24px 0px;
+    margin-left: 80px;
+    margin-right: 80px;
 .button-group{
 
     .categories{
@@ -153,5 +158,75 @@ button{
 
 }
 }}
+
+}
+
+/* phone */
+@media (max-width: 920px) {
+.DiscoverFashionHeader{
+    padding: 0 16px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    .left{
+        width: calck(100vw - 32px);
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    .Title{
+        flex-direction: column-reverse;
+        gap: 4px;
+        h1{
+            font-size: var(--fs-28);
+        }
+        span{
+            font-size: var(--fs-14);
+        }
+    }
+p{
+width: calc(100vw - 23px);
+font-size: var(--fs-14);
+}}
+
+button{
+    width: 155px;
+    height: 49px;
+    font-size: var(--fs-14);
+    margin-top: 20px;
+}}
+
+
+.Choose{
+    padding: 20px 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 40px;
+.button-group{
+    flex-direction: column;
+    .categories{
+        justify-content: space-between;
+        gap: 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--lightGreyBG-color);
+        margin-bottom: 20px;
+        overflow: hidden;
+        button{
+        font-size: var(--fs-16);
+        padding-right: 16px;
+        border-right: 1px solid var(--lightGreyBG-color);
+}
+    }
+    .sub-categories{
+        gap: 8px;
+        button{
+            width: 29.23vw;
+            height: 45px;
+            font-size: var(--fs-14);
+    }
+
+}
+}}
+
 
 }
