@@ -5,14 +5,14 @@
     margin-bottom: 200px; 
 }
 
-@media (min-width: 390px) and (max-width: 1440px) {
+@media  (max-width: 1440px) {
     .container {
         padding: 0 82px; 
         margin-bottom: 100px;
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 670px) {
     .container {
         padding: 0 16px;
         margin-bottom: 80px;
