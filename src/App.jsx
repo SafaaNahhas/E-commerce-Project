@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Navbar from './components/common/NavBar/NavBar'
 import TopBanner from './components/common/TopBanner/TopBanner'
 
+
 function App() {
 
   return (
@@ -12,6 +13,7 @@ function App() {
     <Navbar />
     <Routes>
       <Route path='/' element={<Home/>} />
+    
     </Routes>
     </>
   )
