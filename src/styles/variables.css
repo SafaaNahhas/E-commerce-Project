@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
 :root{
     /* Color */
     /* home page */
@@ -7,9 +14,10 @@
     --subtitle-color: #262626;  /* navbar (slescted and contact support text color + buttons text +dark background) */
     --yellowBG-color: #FFD400;
     --greyBG-color: #F7F7F8; /* navbar not slescted bg */
+    --light-whiteBG: #FCFCFD; /* input in footer */
     --lightGreyBG-color: #F1F1F3; /* (filtter products page) */
-    --lightGreytext-color: #E4E4E7;
-    --white-color:#FFFFFF; /* numbers */
+    --lightGreytext-color: #E4E4E7; /* numbers */
+    --white-color: #FFFFFF;
     /* products page */
     --filtterNS-color: #4C4C4D;
     --subTitle2-color: #333333;
