@@ -1,9 +1,13 @@
+// import Container from "../components/common/Container/Container"
+import HeroSection from "../components/HomePage/HeroSection/HeroSection"
 
 const Home = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+        {/* <Container> */}
+            <HeroSection />
+        {/* </Container> */}
+    </>
   )
 }
 
