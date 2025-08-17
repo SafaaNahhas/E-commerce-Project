@@ -4,7 +4,7 @@ import Autoplay from 'embla-carousel-autoplay';
 
 import './Testimonials.css'; 
 import { TestimonialsCard } from '../TestimonialsCard/TestimonialsCard';
-import Container from '../Container/Container';
+import Container from '../../common/Container/Container';
 
 const testimonialsData = [
   {

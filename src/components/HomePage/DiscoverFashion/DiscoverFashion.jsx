@@ -1,8 +1,9 @@
 
 
 import React, { useState } from "react";
-import LindaSlider from "../../LindaSlider/LindaSlider";
+// import LindaSlider from "../../../HomePage/LindaSlider/LindaSlider";
 import "./DiscoverFashion.css";
+import LindaSlider from "../LindaSlider/LindaSlider";
 
 // =================== PRODUCT ARRAYS =================== //
 const Menwear = [
