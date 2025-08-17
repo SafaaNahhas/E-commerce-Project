@@ -17,7 +17,9 @@
     --light-whiteBG: #FCFCFD; /* input in footer */
     --lightGreyBG-color: #F1F1F3; /* (filtter products page) */
     --lightGreytext-color: #E4E4E7; /* numbers */
-    --white-color: #FFFFFF;
+    --White-color: #FFFFFF;
+    --White-99-color: #FCFCFD; /* AS-add-color */
+
     /* products page */
     --filtterNS-color: #4C4C4D;
     --subTitle2-color: #333333;
@@ -47,7 +49,10 @@
     --fs-28:1.75rem;
     --fs-14:0.875rem;
     --fs-38:2.75rem;
-    
+    --fs-80:5rem; /*AS-add-fs*/
+    --fs-60:3.75rem; /*AS-add-fs*/
+    --fs-50:3.125rem /*AS-add-fs*/
+
 }
 *{
     padding: 0;
