@@ -7,7 +7,7 @@
     min-height: calc(100vh - 119px);
     max-width:1597px ;
     margin: 0 auto;
-    padding: 0 162px; 
+    /* padding: 0 162px;  */
 }
 
 .hero-left-content {
@@ -61,17 +61,6 @@
         padding: 16px;
     }
 }
-@media (max-width: 920px) {
-    .hero-section {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 40px;
-    }
-    .product-stats {
-        gap: 10px;
-        padding: 10px;
-    }
-}
 
 
 @media (max-width: 920px) {
@@ -80,7 +69,9 @@
         flex-direction: column;
         gap: 40px;
         max-height: none; 
-        padding-top: 20px;
+        margin-top: 40px;
+        /* padding-top: 20px; */
+
     }
     .hero-left-content {
         height: auto; 
