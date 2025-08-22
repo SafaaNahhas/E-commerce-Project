@@ -2,7 +2,7 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 .slider-container {
-  width: 100%;
+  width: calc(100vw - 324px);
   position: relative;
   margin: auto;
 }
@@ -38,7 +38,7 @@
 
 .cart-btn {
   position: absolute;
-  bottom: -25px;
+  bottom: 0px;
   right: 15px;
   width: 62px;
   height: 62px;
@@ -143,10 +143,13 @@
 }
 
 
+.progress-container {
+  width: calc(100vw - 160px);
+  margin: 40px auto 0 auto;
+}
 
 .progress-bar {
     height: 5px;
-    margin-top: 77px;
 }
 }
 
