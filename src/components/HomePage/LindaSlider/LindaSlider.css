@@ -1,61 +1,114 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+
 .slider-container {
-    
-  width: 90%;
-  margin: auto;
+  width: 100%;
   position: relative;
+  margin: auto;
+}
+
+.main-slider .slick-slide {
+  padding: 0 10px; /* space between slides */
+  box-sizing: border-box;
 }
 
 .product-card {
+  width: 100%;
   text-align: left;
+  padding: 0px;                /* space between slides */
+  box-sizing: border-box;
 }
 
 .product-img-wrapper {
-  background-color: var(--greyBG-color);
+  width: 100%;
   border-radius: 20px;
-  padding: 20px;
+  background-color: var(--greyBG-color); /* gray background */
+  overflow: visible;
   position: relative;
+  padding: 30px 0;
 }
 
 .product-img-wrapper img {
   width: 100%;
   height: auto;
+  display: block;
+  border-radius: 20px;           /* match wrapper rounded corners */
+  object-fit: cover;             /* ensures full-width & maintains aspect ratio */
 }
 
 .cart-btn {
   position: absolute;
-  bottom: 15px;
+  bottom: -25px;
   right: 15px;
-  background: var(--yellowBG-color);
-  border: none;
-  padding: 10px;
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  background: var(--yellowBG-color);
+}
+
+.cart-btn.white {
+  background: var(--white-color);
+}
+
+.cart-btn img {
+  width: 26px;
+  height: 26px;
 }
 
 .product-name {
-    margin-top: 10px;
-    font-weight: var(--fw-SemiBold);
-    font-size: var(--fs-20);
-    color: var(--subtitle-color);
-
+  padding-top: 25px;
+  font-weight: var(--fw-SemiBold);
+  font-size: var(--fs-20);
+  color: var(--subtitle-color);
 }
 
 .product-price {
-  color: var(--filtterNS-color);
   font-size: var(--fs-18);
-  font-weight: var(--fw-medium);
+  color: var(--filtterNS-color);
+  margin-top: 5px;
 }
 
-.arrow {
-  position: absolute;
-  top: 45%;
-  z-index: 10;
-  background: var(--white-color);
-  border-radius: 50%;
+/* Progress container with arrows on the right */
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(100vw - 324px);
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+
+.progress-bar {
+  flex: 0.93;
+  margin-right: auto;
+  height: 6px;
+  background: var(--lightGreytext-color);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--subtitle-color);
+  width: 0%;
+}
+
+.progress-arrows-right {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.progress-arrows-right .arrow {
   width: 35px;
   height: 35px;
+  background: var(--white-color);
+  border-radius: 50%;
   text-align: center;
   line-height: 35px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -63,22 +116,81 @@
   font-size: 20px;
 }
 
-.arrow.prev {
-  left: -15px;
+@media (max-width: 1440px){
+
+  .slider-container {
+  width: calc(100vw - 160px);
 }
 
-.arrow.next {
-  right: -15px;
+.cart-btn {
+  width: 52px;
+  height: 52px;
+  img{  
+    width: 20px;
+    height: 20px;
+  }
 }
+
+.product-name {
+    margin-top: 20px;
+    font-size: var(--fs-16);
+
+}
+
+.product-price {
+  font-size: var(--fs-16);
+  margin-top: 2px;
+}
+
+
 
 .progress-bar {
-    height: 7px;
-    background: var(--lightGreytext-color);
-    margin-top: 15px;
+    height: 5px;
+    margin-top: 77px;
+}
 }
 
-.progress-fill {
-  height: 100%;
-  background: var(--subtitle-color);
-  width: 0%;
+
+
+/* Mobile vertical layout */
+@media (max-width: 920px) {
+  .vertical-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .view-btn {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--yellowBG-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--subtitle-color);
+    transition: background 0.3s;
+  }
+
+  .view-btn:hover {
+    background: var(--subtitleHover-color);
+  }
+
+  .arrow-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .arrow-icon.down {
+    transform: rotate(0deg);
+  }
+
+  .arrow-icon.up {
+    transform: rotate(180deg);
+  }
 }

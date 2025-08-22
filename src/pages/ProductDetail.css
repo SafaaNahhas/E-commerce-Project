@@ -1,0 +1,81 @@
+.ProductDet{
+    
+    width: calc(100vw - 324px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 117px;
+    
+.Description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+    .Top{
+        display: flex;
+    .TopLeft{
+        width: 406.5px;
+        margin-right: 20px;
+        span{
+            margin-bottom: 6px;
+            font-weight: var(--fw-regular);
+            font-size: var(--fs-18);
+            color: var(--text-color);
+        }
+
+        h2{
+            margin-bottom: 14px;
+            font-weight: var(--fw-semibold);
+            font-size: var(--fs-24);
+            color: var(--subtitle-color);
+        }
+        p{
+            color: var(--subtitle-color);
+            font-family: Manrope;
+            font-weight: 700;
+            font-size: 30px;
+        }
+    }
+    .TopRight{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        button{
+            width: 198.25px;
+            height: fit-content;
+            padding: 18px 0;
+            border: 1px solid var(--lightGreyBG-color);
+            background-color: var(--White-color);
+            border-radius: 32px;
+            font-weight: var(--fw-medium);
+            font-size: var(--fs-18);
+            color: var(--subtitle-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 20px;
+                margin-right: 10px;
+                }
+        }
+    }
+    }
+    .Middle{
+        display: flex;
+        gap: 20px;
+        padding: 30px;
+        border: 1px solid #F1F1F3;
+        .MiddleLeft{
+            width: 376.5px;
+
+        }
+        .MiddleRight{
+            .Sizes{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+
+    
+}
