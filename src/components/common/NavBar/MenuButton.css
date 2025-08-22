@@ -1,0 +1,28 @@
+
+.menu-button-container {
+    display: none;
+}
+
+@media (max-width: 920px) {
+    .menu-button-container {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .menu-button {
+        display: flex;
+        background-color: var(--white-color); 
+        object-fit: contain;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        color: var(--subtitle-color);
+    }
+    
+    .menu-icon {
+        width: 34px;
+        height: auto;
+    }
+}

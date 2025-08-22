@@ -1,8 +1,6 @@
-
-
 import React, { useState } from "react";
-import LindaSlider from "../../LindaSlider/LindaSlider";
 import "./DiscoverFashion.css";
+import LindaSlider from "../LindaSlider/LindaSlider";
 
 // =================== PRODUCT ARRAYS =================== //
 const Menwear = [
@@ -60,7 +58,7 @@ const getProducts = () => {
 };
 
 return (
-    <div>
+    <div className="section">
         <div className="DiscoverFashionHeader">
         <div className="left">
             <div className="Title">
@@ -73,7 +71,7 @@ return (
             classics, ensuring you find the perfect pieces for every occasion.
         </p>
         </div>
-        <button>View All Products</button>
+        <a href="/Products"><button>View All Products</button></a>
     </div>
 
       {/* CATEGORY & SUBCATEGORY BUTTONS */}
