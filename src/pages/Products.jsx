@@ -2,6 +2,7 @@ import React, { useState } from 'react'; // Import useState
 import './Products.css';
 import LindaSlider from "../components/HomePage/LindaSlider/LindaSlider";
 
+
 const Menwear = [
     { id: 1, name: "Performance Jacket", price: "$49.99", image: "/assets/img/Products_Page/Men’s_wear/Active_Lifestyle/Performance_Jacket.png", type: "Party" },
     { id: 2, name: "High_Performance Leggings", price: "$149.99", image: "/assets/img/Products_Page/Men’s_wear/Active_Lifestyle/High_Performance_Leggings.png", type: "Party" },
@@ -30,7 +31,6 @@ const Menwear = [
     { id: 23, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Casual_Collection/Classic Polo Shirt.png", type: "Casual" },
     { id: 24, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Casual_Collection/Cozy Comfort Hoodie.png", type: "Casual" },
 ];
-
 
 const Womenwear = [
     { id: 1, name: "Summer Dress", price: "$59.99", image: "/assets/img/Home_Page/discover_fashion/ClassicPoloShirt.png", type: "Casual" },

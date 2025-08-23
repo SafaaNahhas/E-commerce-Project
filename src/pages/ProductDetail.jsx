@@ -12,7 +12,7 @@ if (!product) {
   return (
     <div>
       <div className="ProductDet">
-        <img src={product.image} alt="" />
+        <div className="ImgCon"><img src={product.image} alt={product.name} /></div>
         <div className="Description">
         <div className="Top">
         <div className="TopLeft">
@@ -52,18 +52,18 @@ if (!product) {
         <div className="ShippingInfo">
           <h3>Shipping Information</h3>
           <ul>
-            <li>Standard shipping: <span>3-5 business days</span></li>
-            <li>Express shipping options available at checkout</li>
+            <li>Standard shipping:<span>3-5 business days</span></li>
+            <li><p>Express shipping options available at checkout</p></li>
           </ul>
         </div>
         <div className="Features">
           <h3>Features</h3>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><p>Distressed detailing for a rugged look</p></li>
+            <li><p>Button-up front closure with engraved metal buttons</p></li>
+            <li><p>Two side pockets for added functionality</p></li>
+            <li><p>Adjustable buttoned cuffs for a personalized fit</p></li>
+            <li><p>Back waist tabs for customizable styling</p></li>
           </ul>
         </div>
       </div>
