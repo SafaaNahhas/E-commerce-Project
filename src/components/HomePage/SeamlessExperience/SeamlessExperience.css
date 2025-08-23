@@ -1,0 +1,197 @@
+.AS-seam {
+  gap: 80px;
+}
+
+.AS-seam-subcontainer {
+  gap: 24px;
+}
+
+.AS-seam-head {
+  display: flex;
+  align-items: start;
+  gap: 7px;
+}
+
+.AS-seam-mainTitle {
+  font-size: var(--fs-48);
+  font-family: var(--font-primary);
+  font-weight: var(--fw-semibold);
+  color: var(--title-color);
+}
+
+.AS-seam-badgecontainer {
+  padding: 8px 14px;
+  gap: 10px;
+}
+
+.AS-seam-badge {
+  font-size: var(--fs-18);
+  font-family: var(--font-primary);
+  color: var(--smallTitle1-color, #98989a);
+}
+
+.AS-seam-paragraph {
+  font-size: var(--fs-18);
+  font-family: var(--font-primary);
+  font-weight: var(--fw-regular);
+  color: var(--text-color);
+}
+
+.AS-seam-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  background-color: var(--White-99-color);
+  border: 1px solid var(--greyBG-color);
+  border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.AS-seam-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--White-color);
+  border: 1px solid var(--lightGreyBG-color, #f1f1f3);
+  border-radius: 16px;
+  padding: 30px;
+  gap: 30px;
+  transition: border-color 0.15s ease, transform 0.12s ease;
+}
+
+.AS-seam-card:hover {
+  border-color: #e5e5e7;
+  transform: translateY(-1px);
+}
+
+.AS-seam-num {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-semibold);
+  color: var(--lightGreytext-color, #e4e4e7);
+  font-size: var(--fs-80);
+  line-height: 150%;
+}
+
+.AS-seam-textcontainer {
+  gap: 10px;
+}
+
+.AS-seam-cardTitle {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-semibold);
+  color: var(--subTitle2-color);
+  font-size: var(--fs-20);
+}
+
+.AS-seam-cardText {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-18);
+  color: var(--text-color, #656567);
+}
+
+@media (max-width: 1440px) {
+  .AS-seam {
+    gap: 50px;
+  }
+
+  .AS-seam-subcontainer {
+    gap: 20px;
+  }
+
+  .AS-seam-head {
+    gap: 4px;
+  }
+
+  .AS-seam-mainTitle {
+    font-size: var(--fs-38);
+  }
+
+  .AS-seam-badgecontainer {
+    padding: 4px 10px;
+    gap: 10px;
+  }
+
+  .AS-seam-badge {
+    font-size: var(--fs-14);
+  }
+
+  .AS-seam-paragraph {
+    font-size: var(--fs-body);
+  }
+
+  .AS-seam-grid {
+    border-radius: 16px;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .AS-seam-card {
+    border-radius: 16px;
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .AS-seam-num {
+    font-size: var(--fs-60);
+  }
+
+  .AS-seam-textcontainer {
+    gap: 6px;
+  }
+
+  .AS-seam-cardTitle {
+    font-size: var(--fs-18);
+  }
+
+  .AS-seam-cardText {
+    font-size: var(--fs-14);
+  }
+}
+
+@media (max-width: 920px) {
+  .AS-seam {
+    gap: 40px;
+  }
+
+  .AS-seam-subcontainer {
+    gap: 16px;
+  }
+
+  .AS-seam-head {
+    flex-direction: column-reverse;
+    gap: 4px;
+  }
+
+  .AS-seam-mainTitle {
+    font-size: var(--fs-28);
+  }
+
+  .AS-seam-paragraph {
+    font-size: var(--fs-14);
+  }
+
+  .AS-seam-grid {
+    grid-template-columns: 1fr;
+    border-radius: 16px;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .AS-seam-card {
+    border-radius: 12px;
+  }
+
+  .AS-seam-num {
+    font-size: var(--fs-50);
+  }
+
+  .AS-seam-textcontainer {
+    gap: 4px;
+  }
+
+  .AS-seam-cardTitle {
+    font-size: var(--fs-body);
+  }
+
+}

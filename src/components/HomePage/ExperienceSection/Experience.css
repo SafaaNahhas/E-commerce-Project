@@ -1,0 +1,68 @@
+.klothink-experience .header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.klothink-experience .header  {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.klothink-experience .header p {
+  margin-top: 1rem;
+  color: #555;
+  max-width: 800px;
+  line-height: 1.6;
+}
+.testimonials-content {
+  flex-grow: 1;
+}
+
+
+/* Grid layout */
+.cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3,  1fr);
+  gap: 20px;
+}
+
+/* View All button */
+.view-all {
+  display: none;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.view-all button {
+  background:none;
+  color: #000;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+.view-all button:hover {
+  opacity: 0.9;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr; 
+  }
+
+  .cards .experience-card:nth-child(n+3) {
+    display: none; 
+  }
+
+  .view-all {
+    display: block; 
+  }
+}

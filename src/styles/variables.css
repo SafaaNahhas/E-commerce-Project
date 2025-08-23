@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
 :root{
     /* Color */
     /* home page */
@@ -7,13 +14,19 @@
     --subtitle-color: #262626;  /* navbar (slescted and contact support text color + buttons text +dark background) */
     --yellowBG-color: #FFD400;
     --greyBG-color: #F7F7F8; /* navbar not slescted bg */
+    --light-whiteBG: #FCFCFD; /* input in footer */
     --lightGreyBG-color: #F1F1F3; /* (filtter products page) */
-    --lightGreytext-color: #E4E4E7;
-    --white-color:#FFFFFF; /* numbers */
+    --lightGreytext-color: #E4E4E7; /* numbers */
+    --White-color: #FFFFFF;
+    --White-99-color: #FCFCFD; /* AS-add-color */
+
     /* products page */
     --filtterNS-color: #4C4C4D;
     --subTitle2-color: #333333;
-
+    --white-color:#FFFFFF;
+    --light-whiteBG: #FCFCFD;
+    --greyText-color:#98989A;
+    --shadow-color:#FAFAFA;
     /* Font */
     --font-primary: 'Manrope', sans-serif;
 
@@ -24,23 +37,29 @@
 
     /* Font Sizes */
     --fs-title: 2rem;           
-    --fs-subtitle: 1.5rem;      
+    --fs-subtitle: 1.5rem; 
+    --fs-12: 0.75rem;
+    /* 16px=1rem */
     --fs-body: 1rem;  
     --fs-48:  3rem ;   
     --fs-34:2.125rem ;
     --fs-20:1.25rem ;
     --fs-18:1.125rem;
+    --fs-26: 1.625rem;
     --fs-28:1.75rem;
     --fs-14:0.875rem;
     --fs-38:2.75rem;
+    --fs-80:5rem; /*AS-add-fs*/
+    --fs-60:3.75rem; /*AS-add-fs*/
+    --fs-50:3.125rem /*AS-add-fs*/
 
 }
 *{
     padding: 0;
     box-sizing: border-box;
     margin:0;
+    --font-primary: 'Manrope', sans-serif !important;
 }
-
 
 /* mainTitle*/
 h1, .mainTitle {
@@ -61,7 +80,7 @@ p, .paragraph {
 }
 
 /*laptop*/
-@media (max-width: 1440px) {
+@media  (max-width: 1440px) {
     h1, .mainTitle{
         font-size: var(--fs-38);
     }
@@ -72,11 +91,12 @@ p, .paragraph {
 }
 
 /*mobile*/
-@media (max-width: 670px) {
+@media (max-width:920px){
     h1, .mainTitle{
         font-size: var(--fs-28);
     }
     p ,.paragraph{
         font-size: var(--fs-14);
     }
+    
 }
