@@ -66,13 +66,14 @@ const AS_FAQ_DATA = [
 
 export default function Support() {
   return (
+
     <FAQSection
       mainTitle="QUESTIONS? WE HAVE ANSWERS."
       paragraph="Ease into the world of Klothink with clarity. Our FAQs cover a spectrum of topics, ensuring you have the information you need for a seamless shopping experience."
       items={AS_FAQ_DATA}
-      tabs={AS_TABS}       
-      idPrefix="klothink"   
-      singleOpen={true}     
+      tabs={AS_TABS}
+      idPrefix="klothink"
+      singleOpen={true}
     />
   );
 }
