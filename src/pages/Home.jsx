@@ -5,7 +5,7 @@ import { Testimonials } from '../components/HomePage/Testimonials/Testimonials'
 import KlothinkExperience from '../components/HomePage/ExperienceSection/KlothinkExperience'
 import SeamlessExperience from "../components/HomePage/SeamlessExperience/SeamlessExperience"
 import DiscoverFashion from "../components/HomePage/DiscoverFashion/DiscoverFashion"
-// import { Reviwes } from '../components/HomePage/Product_details/Reviews/Reviwes'
+import FAQSection from "../components/SupportPage/FAQSection/FAQSection"
 
 
 const Home = () => {
@@ -17,8 +17,7 @@ const Home = () => {
         <DiscoverFashion />
         <KlothinkExperience/>
         <Testimonials/>
-        <Reviwes/>
-        
+        <FAQSection/>
         <SeamlessExperience />
 
     </> 
