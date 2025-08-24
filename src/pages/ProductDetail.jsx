@@ -1,6 +1,8 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import { Reviwes } from '../components/HomePage/Product_details/Reviews/Reviwes'
 import './ProductDetail.css';
+import FAQSection from '../components/ProductDetail/FAQSection/FAQSection';
 
 const ProductDetail = () => {
   const location = useLocation();
@@ -68,6 +70,9 @@ if (!product) {
         </div>
       </div>
     </div>
+
+    <Reviwes/>
+    <FAQSection/>
     </div>
   )
 }
