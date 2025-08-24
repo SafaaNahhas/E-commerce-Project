@@ -12,7 +12,9 @@
     letter-spacing: -3%;
     height: 67px;
 }
-
+.top-banner-text {
+    white-space: nowrap;
+}
 .top-banner-arrow {
     cursor: pointer;
 }
@@ -37,7 +39,20 @@
     .top-banner-container {
         padding: 40px 25.5px 14px 25.5px; 
         height: 75px;
+    }
+    .top-banner-text {
+        
+        /* min-width: 0; */
+/* 
+        overflow: hidden;
 
+        text-overflow: ellipsis; */
     }
     
+}
+@media (max-width:360px){
+    .top-banner-text {
+        white-space: wrap;
+    }
+
 }
