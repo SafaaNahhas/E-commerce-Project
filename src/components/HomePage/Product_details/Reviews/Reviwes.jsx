@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 
-import './Testimonials.css'; 
-import { TestimonialsCard } from '../TestimonialsCard/TestimonialsCard';
-import Container from '../../common/Container/Container';
+import '../../Testimonials/Testimonials.css';
+import { TestimonialsCard } from '../../TestimonialsCard/TestimonialsCard';
+import Container from '../../../common/Container/Container';
 
 
 const testimonialsData = [
@@ -45,7 +45,7 @@ const testimonialsData = [
   },
 ];
 
-export const Testimonials = () => {
+export const Reviwes = () => {
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, align: 'start' });
 
@@ -64,15 +64,15 @@ export const Testimonials = () => {
         <div className="testimonials-header">
           <div className="testimonials-content">
             <div className="title-group">
-              <h2 className="testimonials-title">CUSTOMERS LOVE.</h2>
-              <span className="testimonials-subtitle">TESTIMONIALS</span>
+              <h2 className="testimonials-title">REVIEWS.</h2>
+              <span className="testimonials-subtitle">Product Reviews</span>
             </div>
             <p className="testimonials-description">
               At Klothink, our customers are the heartbeat of our brand. 
               Explore the heartfelt testimonials shared by those who have experienced the magic of Klothink fashion.
             </p>
           </div>
-          <button className="view-all-btn">View All Testimonials</button>
+
         </div>
         
         <div className="embla-wrapper">

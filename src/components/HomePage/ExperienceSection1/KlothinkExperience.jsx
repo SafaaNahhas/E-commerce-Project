@@ -1,4 +1,5 @@
-import Container from "../Container/Container";
+
+import Container from "../../common/Container/Container";
 import ExperienceCard from "../ExperienceCard/ExperienceCard";
 import "./Experience.css";
 

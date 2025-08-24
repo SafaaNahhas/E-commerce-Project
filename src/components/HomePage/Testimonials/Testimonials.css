@@ -17,24 +17,25 @@
 .title-group {
   display: flex;
   flex-direction: row;
-  align-items: baseline; 
+  align-items: flex-start; 
   gap: 15px;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .testimonials-subtitle {
   color: #888;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-weight: 600;
+  /* font-weight: 600; */
+  margin-top: 4px; 
 }
 
 .testimonials-title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 600;
   margin: 0;
-  line-height: 1; 
+  line-height: 100%; 
 }
 
 .testimonials-description {
@@ -54,11 +55,18 @@
   cursor: pointer;
   transition: background-color 0.3s;
   white-space: nowrap;
-   margin-left: 20px; 
+  margin-left: 20px; 
 }
+
+
 
 .view-all-btn:hover {
   background-color: #e0a800;
+}
+
+.embla-wrapper {
+  position: relative;
+  width: 100%;
 }
 
 /* Embla Carousel Styles */
@@ -68,34 +76,100 @@
 
 .embla__container {
   display: flex;
+  justify-content: flex-start;
+  gap: 5px;
 }
 
 .embla__slide {
-  flex: 0 0 33.333%; 
+  flex: 0 0 33.333%; /* ✅ 3 كروت للديسكتوب */
   min-width: 0;
-  padding-left: 20px; 
+  /* padding-left: 20px; */
+   box-sizing: border-box; 
 }
 
+/* أزرار التنقل */
+.embla__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 10px;
+  z-index: 10;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+.embla-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+ 
+  }
+ /* .embla__button {
+    position: static; 
+    transform: none;
+  }*/
 
+.embla__button:hover {
+  opacity: 1;
+}
 
+.embla__button--prev {
+  left: -50px;
+     width: 50px;
+    height: 50px;
+}
+
+.embla__button--next {
+  right: -50px;
+     width: 50px;
+    height: 50px;
+}
+
+/* موبايل: كرت واحد */
 @media (max-width: 768px) {
   .testimonials-header {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: flex-start;
   }
+
   .title-group {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
     margin-bottom: 1rem;
   }
 
-  .view-all-btn {
-    margin-top: 1rem;
-     margin-left: 0; 
+  .testimonials-description {
+    margin-bottom: 1.5rem; /* مسافة تحت الفقرة */
   }
 
+  .view-all-btn {
+    margin-top: 0.5rem;
+    margin-left: 0;   /* يلغي المسافة الجانبية */
+    align-self:  flex-start; /* يخلي الزر بالوسط */
+  }
+
+  .embla-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+     position: static;
+  }
+
+  .embla__button {
+    position: static; /* نلغي الـ absolute */
+    transform: none;
+  }
   .embla__slide {
-    flex: 0 0 100%; 
+    flex: 0 0 100%;
   }
 }
 

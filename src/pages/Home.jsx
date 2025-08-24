@@ -6,6 +6,9 @@ import KlothinkExperience from '../components/HomePage/ExperienceSection/Klothin
 import FAQSection from "../components/HomePage/FAQSection/FAQSection"
 import SeamlessExperience from "../components/HomePage/SeamlessExperience/SeamlessExperience"
 import DiscoverFashion from "../components/HomePage/DiscoverFashion/DiscoverFashion"
+import { Reviwes } from '../components/HomePage/Product_details/Reviews/Reviwes'
+import { Policys } from '../components/HomePage/SupportPage/PolicySection/ReturnPolicy'
+
 const Home = () => {
   return (
     <>
@@ -15,6 +18,8 @@ const Home = () => {
         <DiscoverFashion />
         <KlothinkExperience/>
         <Testimonials/>
+        <Reviwes/>
+        <Policys/>
         <FAQSection />
         <SeamlessExperience />
 

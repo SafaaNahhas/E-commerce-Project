@@ -17,7 +17,7 @@ const KlothinkExperience = () => {
   return (
     <Container>
       <section className="klothink-experience">
-        <div className="header">
+        <div className="">
         
          <div className="testimonials-content">
            <div className="title-group">

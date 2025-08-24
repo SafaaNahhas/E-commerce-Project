@@ -18,7 +18,8 @@ export const TestimonialsCard = ({ img, name, rating, text }) => {
           <h3>{name}</h3>
           <StarRating rating={rating} />
         </div>
-        <span className="quote-icon">”</span>
+       <img src="/assets/img/Home_Page/customers_love/double_cotation.png" alt="quote" className="quote-icon" />
+
       </div>
       <p className="card-text">{text}</p>
     </div>
