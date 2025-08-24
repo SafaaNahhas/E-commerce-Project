@@ -119,7 +119,7 @@
     height: auto;
     display: block;
     /* max-height: 749px; */
-    min-height: 69.3518vh;
+    /* min-height: 69.3518vh; */
 }
 .custom-swiper-button-next,
 .custom-swiper-button-prev {
