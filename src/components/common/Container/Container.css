@@ -1,4 +1,4 @@
-.container {
+.SN-container {
     /* max-width: 1597px;  */
     margin: 0 auto;
     padding: 0 162px; 
@@ -6,14 +6,14 @@
 }
 
 @media (max-width: 1440px) {
-    .container {
+    .SN-container {
         padding: 0 82px; 
         margin-bottom: 100px;
     }
 }
 
 @media (max-width:920px){
-    .container {
+    .SN-container {
         padding: 0 16px;
         margin-bottom: 80px;
     }

@@ -3,7 +3,7 @@ import './ProductCard.css';
 
 const ProductCard = ({ title, subtitle }) => {
     return (
-        <div className="product-card">
+        <div className="SN-product-card">
             <h3>{title}</h3>
             <p>{subtitle}</p>
         </div>

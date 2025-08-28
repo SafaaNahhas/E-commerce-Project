@@ -27,6 +27,7 @@
     --light-whiteBG: #FCFCFD;
     --greyText-color:#98989A;
     --shadow-color:#FAFAFA;
+    --red-color: #c82333;
     /* Font */
     --font-primary: 'Manrope', sans-serif;
 
@@ -51,9 +52,15 @@
     --fs-38:2.75rem;
     --fs-80:5rem; /*AS-add-fs*/
     --fs-60:3.75rem; /*AS-add-fs*/
-    --fs-50:3.125rem /*AS-add-fs*/
+    --fs-50:3.125rem; /*AS-add-fs*/
+    
+    /* --top-banner-height: 67px;
+    --navbar-height: 95px;
+    --header-total-height: calc(var(--top-banner-height) + var(--navbar-height)); */
 
 }
+
+
 *{
     padding: 0;
     box-sizing: border-box;
@@ -79,6 +86,14 @@ p, .paragraph {
     font-weight: var(--fw-regular);
 }
 
+
+/* @media (max-width: 1570px) {
+    :root {
+        --top-banner-height: 49px;
+        --navbar-height: 81px;
+        --header-total-height: calc(var(--top-banner-height) + var(--navbar-height));
+    }
+} */
 /*laptop*/
 @media  (max-width: 1440px) {
     h1, .mainTitle{
@@ -100,3 +115,5 @@ p, .paragraph {
     }
     
 }
+
+

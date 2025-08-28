@@ -1,5 +1,5 @@
-.hero-text-content{
-    .title-and-tag {
+.SN-hero-text-content{
+    .SN-title-and-tag {
         display: flex;
         align-items: stretch;
         gap: 7px; 
@@ -9,7 +9,7 @@
                 font-weight: var(--fw-semibold);
                 color: var( --title-color);
             }
-            .style-redefined-tag {
+            .SN-style-redefined-tag {
                 font-size:var(--fs-18);
                 font-weight:var(--fw-semibold);
                 color: var(--greyText-color);
@@ -25,10 +25,10 @@
         color: var(--subtitle-color);
         margin-bottom: 50px;
     }
-    .hero-buttons {
+    .SN-hero-buttons {
         display: flex;
         gap: 16px;
-            .primary-button {
+            .SN-primary-button {
                 background-color: var(--yellowBG-color);
                 color: var(--title-color);
                 padding: 18px 24px;
@@ -43,17 +43,18 @@
                 align-items: center;
                 justify-content: center;
                 gap: 10px; 
-                    .button-icon {
+                text-decoration: none;
+                    .SN-button-icon {
                         width: 24px;
                         height: 24px;
                     }
             }
 
 
-            .primary-button:hover {
+            .SN-primary-button:hover {
                 background-color: var(--dark-yellow-color);
             }
-            .secondary-button {
+            .SN-secondary-button {
                 background-color: transparent;
                 color: var(--title-color);
                 padding: 18px 43px;
@@ -64,9 +65,11 @@
                 font-weight: var(--fw-semibold);
                 cursor: pointer;
                 transition: background-color 0.3s ease, color 0.3s ease;
+                text-decoration: none;
+                text-align: center;
         
 }
-            .secondary-button:hover {
+            .SN-secondary-button:hover {
                 background-color: var(--title-color);
                 color: var(--white-color);
             }
@@ -75,16 +78,17 @@
 
 }
 
-@media (max-width: 1440px) {
-    .hero-text-content {
-        .title-and-tag {
+/* @media (max-width: 1440px) { */
+@media (max-width: 1570px) {
+    .SN-hero-text-content {
+        .SN-title-and-tag {
         gap: 4px; 
         margin-bottom: 20px;
             h1 {
                 font-size: var(--fs-38);
                 /* margin-bottom: 20px; */
             }
-            .style-redefined-tag {
+            .SN-style-redefined-tag {
                 font-size:var(--fs-14);
                 
             }
@@ -93,18 +97,18 @@
             font-size:var(--fs-body);
             margin-bottom: 40px;
         }
-        .hero-buttons {
+        .SN-hero-buttons {
             gap: 8px;
-            .primary-button {
+            .SN-primary-button {
                 padding: 14px 20px;
                 gap: 6px;
                 font-size: var(--fs-14);
-                .button-icon {
+                .SN-button-icon {
                     width: 20px;
                     height: 20px;
                 }
             }
-            .secondary-button {
+            .SN-secondary-button {
                 padding: 14px 36px;
                 font-size:var(--fs-14);
             }
@@ -114,8 +118,8 @@
 }
 /* @media (max-width:920px){ */
 @media (max-width: 1150px) {
-    .hero-text-content {
-        .title-and-tag { 
+    .SN-hero-text-content {
+        .SN-title-and-tag { 
             margin-bottom: 10px;
             display: flex;
             flex-direction: column; 
@@ -123,7 +127,7 @@
                 h1 {
                 font-size: var(--fs-28);
                 }
-                .style-redefined-tag {
+                .SN-style-redefined-tag {
                     order: -1;
                     margin-bottom: 4px; 
                     align-self: flex-start;
@@ -134,8 +138,8 @@
                 font-size:var(--fs-14);
                 margin-bottom: 24px;
             }
-            .hero-buttons {
-                .primary-button, .secondary-button {
+            .SN-hero-buttons {
+                .SN-primary-button, .SN-secondary-button {
                     flex-grow: 1; 
                     white-space: nowrap;
                     padding: 14px 20px;

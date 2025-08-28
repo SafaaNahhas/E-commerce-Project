@@ -1,11 +1,15 @@
-.hero-section {
+.SN-hero-section {
     padding-top: 100px;  
     display: flex;
     justify-content: space-between;
     align-items: stretch; 
     gap: 80px;
+    height: auto;
+    min-height: auto;
+ /* height: calc(100vh - var(--header-total-height) - 100px); 100px هنا هي قيمة padding-top */
+
 }
-.hero-left-content {
+.SN-hero-left-content {
     min-width: 0;                 
     justify-content: space-between;
     display: flex;
@@ -16,12 +20,12 @@
     box-sizing: border-box; 
     min-width: 0; 
 }
-.product-stats {
+.SN-product-stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     border: 2px solid var( --white-color);
-    box-shadow: 0px 0px 0px 8px var(--shadow-color);
+    box-shadow: inset 0px 0px 0px 8px var(--shadow-color);
     background: var(--greyBG-color);
     border-radius: 12px;
     opacity: 1;
@@ -31,7 +35,7 @@
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
 }
-.hero-right-content {
+.SN-hero-right-content {
     background-color: var(--greyBG-color);
     flex: 1 1 673px;
     max-width: 673px;
@@ -42,53 +46,64 @@
     justify-content: center;
     border-radius: 20px;
     padding: 40px 20px;
-    /* max-height: 749px; */
-    /* min-height: 69.3518vh; */
+    min-height: auto;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-@media (max-width: 1440px) {
-    .hero-section {
-        padding-top: 80px;
-        gap: 4.166%;
+/* @media (max-width: 1440px) { */
+@media (max-width: 1570px) {
+    .SN-hero-section {
+        padding-top: 60px;
+        gap: 60px;
         margin-bottom: 150px;
+        height: auto;
+        min-height: auto;
     }
-    .product-stats {
+    .SN-product-stats {
         gap: 16px;
         padding: 16px;
         box-shadow: 0px 0px 0px 6px var(--shadow-color);
     }
-    .hero-right-content {
+    .SN-hero-right-content {
         flex: 1 1 544px;
         border-radius: 16px;
         padding: 20px 16px;
+        min-height: auto;
     }
+    .SN-hero-left-content {
+        gap: 60px;
+        flex: 1 1 675px;
+    }
+    
 }
 /* @media (max-width: 920px) { */
 @media (max-width: 1150px) {
-    .hero-section { 
+    .SN-hero-section { 
         flex-direction: column;
         gap: 40px;
         max-height: none; 
         padding-top: 40px;
+        height: auto;
     }
-    .hero-left-content {
+    .SN-hero-left-content {
         height: auto; 
         min-width: 100%;
         max-width: 100%;
         flex: 1 1 100%; 
     }
-    .hero-right-content {
+    .SN-hero-right-content {
         min-width: 100%; 
         max-width: 100%;
         flex: 1 1 100%; 
     }
-    .product-stats {
+    .SN-product-stats {
         gap: 10px;
         padding: 10px;
         box-shadow: 0px 0px 0px 4px var(--shadow-color);
+        display: grid;
+        grid-template-columns: repeat(2, calc((100% - 10px) / 2));
     }
 }
 

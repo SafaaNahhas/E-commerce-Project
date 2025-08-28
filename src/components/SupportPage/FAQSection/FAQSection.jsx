@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import FAQSection from "../../common/FAQSection/FAQSection";
 
 const AS_TABS = ["All", "Ordering", "Shipping", "Returns", "Customer Support"];
@@ -64,16 +65,139 @@ const AS_FAQ_DATA = [
   }
 ];
 
-export default function Support() {
+
+
+//safaa
+const ALL_TABS = ["All", "Ordering", "Shipping", "Returns", "Customer Support"];
+
+
+export default function Support({ isDashboard }) {
+  // safaa
+  const [faqs, setFaqs] = useState([]);
+  const [editingIndex, setEditingIndex] = useState(null);
+  const [form, setForm] = useState({ q: '', a: '', category: 'Ordering' });
+
+  useEffect(() => {
+    let storedFaqs = JSON.parse(localStorage.getItem('faqs')) || [];
+    if (storedFaqs.length === 0) {
+      localStorage.setItem('faqs', JSON.stringify(AS_FAQ_DATA));
+      storedFaqs = AS_FAQ_DATA;
+    }
+    setFaqs(storedFaqs);
+  }, []);
+
+  useEffect(() => {
+    if (editingIndex !== null) {
+      setForm(faqs[editingIndex]);
+    } else {
+      setForm({ q: '', a: '', category: 'Ordering' });
+    }
+  }, [editingIndex, faqs]);
+
+  const handleFormChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newFaqs = [...faqs];
+    if (editingIndex !== null) {
+      newFaqs[editingIndex] = form;
+      setEditingIndex(null);
+    } else {
+      newFaqs.push(form);
+    }
+    setFaqs(newFaqs);
+    localStorage.setItem('faqs', JSON.stringify(newFaqs));
+    setForm({ q: '', a: '', category: 'Ordering' });
+  };
+
+  const handleDelete = (index) => {
+    const updatedFaqs = faqs.filter((_, i) => i !== index);
+    setFaqs(updatedFaqs);
+    localStorage.setItem('faqs', JSON.stringify(updatedFaqs));
+    if (editingIndex === index) {
+      setEditingIndex(null);
+    }
+  };
+  
+  const handleEdit = (index) => {
+    setEditingIndex(index);
+  };
+  
+  const handleCancelEdit = () => {
+    setEditingIndex(null);
+  };
+  // 
   return (
+  <section className="faq-page-container">
+      {/*safaa*/}
+      {isDashboard && (
+        <section className="SN-dashboard-section">
+          <div className="SN-dashboard-header">
+            <h2 className="SN-dashboard-title">Manage FAQs
+            </h2>
+          </div>
+          <form className="SN-dashboard-form" onSubmit={handleSubmit}>
+            <input 
+              type="text" 
+              name="q" 
+              placeholder="Question" 
+              value={form.q}
+              onChange={handleFormChange} 
+              required 
+            />
+            <textarea 
+              name="a" 
+              placeholder="Answer" 
+              value={form.a}
+              onChange={handleFormChange} 
+              required 
+            />
+            <select 
+              name="category"
+              value={form.category}
+              onChange={handleFormChange}
+              required
+            >
+              {AS_TABS.slice(1).map(tab => (
+                <option key={tab} value={tab}>{tab}</option>
+              ))}
+            </select>
+            <button type="submit">
+              {editingIndex !== null ? 'Update FAQ' : 'Add New FAQ'}
+            </button>
+            {editingIndex !== null && (
+              <button
+                type="button"
+                onClick={handleCancelEdit}
+                className="cancel-SN-edit-btn"
+              >
+              Cancel Edit
+              </button>
+            )}
+          </form>
+        </section>
+      )}
 
     <FAQSection
+      isDashboard={isDashboard}
       mainTitle="QUESTIONS? WE HAVE ANSWERS."
       paragraph="Ease into the world of Klothink with clarity. Our FAQs cover a spectrum of topics, ensuring you have the information you need for a seamless shopping experience."
-      items={AS_FAQ_DATA}
-      tabs={AS_TABS}
-      idPrefix="klothink"
-      singleOpen={true}
+      // items={AS_FAQ_DATA}
+      items={faqs} 
+      // tabs={AS_TABS}
+      // idPrefix="klothink"
+      // singleOpen={true}
+      
+       // safaa: 
+      handleDelete={handleDelete}
+      handleEdit={handleEdit}
+      
     />
+    </section>
   );
 }

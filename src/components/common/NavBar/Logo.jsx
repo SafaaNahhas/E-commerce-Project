@@ -3,7 +3,7 @@ import './Logo.css';
 
 const Logo = () => {
     return (
-        <img src={logoImage} alt="Klothink Logo" className="logo" />
+        <img src={logoImage} alt="Klothink Logo" className="SN-logo" />
     );
 };
 

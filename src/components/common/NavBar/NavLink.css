@@ -1,4 +1,4 @@
-.nav-link {
+.SN-nav-link {
     color: var(--text-color);
     text-decoration: none;
     font-weight: var(--fw-medium);
@@ -10,18 +10,18 @@
 
 }
 
-.nav-link.active {
+.SN-nav-link.active {
     background-color: var( --greyBG-color);
     color: var(--subtitle-color); 
 }
 
 @media (max-width: 1440px) {
-    .nav-link{
+    .SN-nav-link{
         padding: 12px 20px; 
     }
 }
 @media (max-width:920px){
-    .nav-link{
+    .SN-nav-link{
             padding: 20px 82px; 
     }
 }

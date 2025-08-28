@@ -3,7 +3,7 @@ import './NavLink.css';
 
 const NavLink = ({ to, text , onClick }) => {
     return (
-        <RouterNavLink to={to} className="nav-link" onClick={onClick}>
+        <RouterNavLink to={to} className="SN-nav-link" onClick={onClick}>
         {text}
         </RouterNavLink>
     );

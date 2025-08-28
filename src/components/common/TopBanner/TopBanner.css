@@ -1,5 +1,5 @@
 
-.top-banner-container {
+.SN-top-banner-container {
     background-color: var(--title-color); 
     color: var(--white-color); 
     padding: 20px 0; 
@@ -12,46 +12,37 @@
     letter-spacing: -3%;
     height: 67px;
 }
-.top-banner-text {
+.SN-top-banner-text {
     white-space: nowrap;
 }
-.top-banner-arrow {
+.SN-top-banner-arrow {
     cursor: pointer;
 }
 
-.arrow-icon {
+.SN-arrow-icon {
     width: 24px; 
     height: auto;
 }
 @media  (max-width: 1440px) {
-    .top-banner-container {
+    .SN-top-banner-container {
         padding: 14px 0; 
         font-size: var(--fs-14); 
         height: 49px;
 
     }
-    .arrow-icon {
+    .SN-arrow-icon {
         width: 20px; 
     }
 }
 
 @media (max-width:920px){
-    .top-banner-container {
+    .SN-top-banner-container {
         padding: 40px 25.5px 14px 25.5px; 
         height: 75px;
     }
-    .top-banner-text {
-        
-        /* min-width: 0; */
-/* 
-        overflow: hidden;
-
-        text-overflow: ellipsis; */
-    }
-    
 }
 @media (max-width:360px){
-    .top-banner-text {
+    .SN-top-banner-text {
         white-space: wrap;
     }
 

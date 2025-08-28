@@ -4,10 +4,10 @@ import './CartAndSupportButtons.css';
 
 const CartAndSupportButtons = ({ isInDropdown = false , onLinkClick}) => {
     return (
-          <div className={`cart-and-support ${isInDropdown ? 'in-dropdown' : ''}`}>
+        <div className={`cart-and-support ${isInDropdown ? 'in-dropdown' : ''}`}>
             {!isInDropdown && (
-                <Link to="/cart" className="cart-button">
-                    <img src={cartIcon} alt="Cart" className="cart-icon" />
+                <Link to="/cart" className="SN-cart-button">
+                    <img src={cartIcon} alt="Cart" className="SN-cart-icon" />
                 </Link>
             )}
             <Link 

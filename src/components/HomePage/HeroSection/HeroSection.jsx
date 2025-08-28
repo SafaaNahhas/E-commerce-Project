@@ -7,16 +7,16 @@ import ProductCard from './ProductCard/ProductCard';
 
 const HeroSection = () => {
     return (
-        <div className="hero-section">
-            <div className="hero-left-content">
+        <div className="SN-hero-section">
+            <div className="SN-hero-left-content">
                 <HeroTextContent />
-                <div className="product-stats">
+                <div className="SN-product-stats">
                     {statsData.map((stat, index) => (
                         <ProductCard key={index} title={stat.title} subtitle={stat.subtitle} />
                     ))}
                 </div>
             </div>
-            <div className="hero-right-content">
+            <div className="SN-hero-right-content">
                 <HeroProductDisplay />
             </div>
         </div>

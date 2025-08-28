@@ -7,6 +7,7 @@ import Support from './pages/Support'
 import Navbar from './components/common/NavBar/NavBar'
 import TopBanner from './components/common/TopBanner/TopBanner'
 import Footer from './components/common/Footer/Footer'
+import DashboardPage from './pages/DashboardPage.jsx'
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <Route path='/Products' element={<Products/>} />
       <Route path="/Product/:id" element={<ProductDetail/>} />
       <Route path='/Support' element={<Support/>} />
+      <Route path='/Dashboard' element={<DashboardPage />} />
     </Routes>
     <Footer />
     </>

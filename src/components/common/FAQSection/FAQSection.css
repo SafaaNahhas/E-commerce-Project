@@ -303,3 +303,59 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+/*safaa*/
+
+.AS-faq-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.AS-faq-actions button {
+    border: none;
+    border-radius: 21px;
+    padding: 5px 4px;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    -ms-border-radius: 21px;
+    -o-border-radius: 21px;
+}
+
+.faq-SN-edit-btn {
+    background-color: var(--subTitle2-color);
+    color: white;
+}
+
+.faq-SN-delete-btn {
+    background-color:#c82333;
+    color: white;
+}
+
+.SN-expand-toggle-btn:hover {
+    text-decoration: underline;
+}
+
+.AS-faq-answer {
+    transition: none; 
+    opacity: 1;
+}
+
+
+
+
+

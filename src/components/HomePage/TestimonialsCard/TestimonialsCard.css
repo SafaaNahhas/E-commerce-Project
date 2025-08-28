@@ -75,3 +75,38 @@
   margin-top: 10px;
   flex-grow: 1;
 }
+
+
+/* safaa */
+.testimonial-card .SN-expandable-text-container {
+  flex-grow: 1; 
+}
+
+.testimonial-card .SN-expand-toggle-btn {
+  background: linear-gradient(to right, transparent, white 25%, white);
+}
+
+.star-rating {
+  display: inline-flex; 
+}
+
+.star {
+  position: relative;
+  font-size: 1.2rem;
+  color: #e0e0e0; 
+  display: inline-block;
+}
+
+.star.star-filled {
+  color: #ffc107;
+}
+
+.star.star-half::before {
+  content: '\2605'; 
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%; 
+  overflow: hidden;
+  color: #ffc107; 
+}

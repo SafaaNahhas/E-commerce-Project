@@ -1,0 +1,36 @@
+
+.SN-expandable-text-container {
+    position: relative;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.SN-expandable-text-content {
+    display: block;
+    overflow: hidden;
+    transition: max-height 0.35s ease-in-out; 
+    overflow-wrap: break-word;
+    word-break: break-word;
+    line-height: 1.5; 
+    color: #555; 
+}
+
+
+
+.SN-expand-toggle-btn {
+    display: block; 
+    margin-left: auto; 
+    margin-top: 5px;
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--subTitle2-color, #007bff);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.SN-expand-toggle-btn:hover {
+    text-decoration: underline;
+    opacity: 1; 
+}

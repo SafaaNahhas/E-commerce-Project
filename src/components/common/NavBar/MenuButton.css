@@ -1,16 +1,16 @@
 
-.menu-button-container {
+.SN-menu-button-container {
     display: none;
 }
 
 @media (max-width: 920px) {
-    .menu-button-container {
+    .SN-menu-button-container {
         display: flex;
         align-items: center;
 
     }
 
-    .menu-button {
+    .SN-menu-button {
         display: flex;
         background-color: var(--white-color); 
         object-fit: contain;
@@ -21,7 +21,7 @@
         color: var(--subtitle-color);
     }
     
-    .menu-icon {
+    .SN-menu-icon {
         width: 34px;
         height: auto;
     }

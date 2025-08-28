@@ -4,7 +4,7 @@ import './Container.css';
 const Container = ({ children }) => {
     return (
 
-    <div className="container">
+    <div className="SN-container">
         {children}
     </div>
 
