@@ -1,9 +1,9 @@
 
 import Container from "../../common/Container/Container";
-import "./support.css";
+import "./Supportsection.css";
 import SupportLocations from "./SupportLocations";
 
-export default function AS_support() {
+export default function Supportsection() {
     return (
         <section className="AS-support">
             <Container>
