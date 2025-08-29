@@ -208,8 +208,9 @@ button{
 .button-group{
     flex-direction: column;
     .categories{
-        justify-content: space-between;
-        gap: 0px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
         padding-bottom: 20px;
         border-bottom: 1px solid var(--lightGreyBG-color);
         margin-bottom: 20px;

@@ -110,7 +110,7 @@ function ProductsPage() {
 <div className="Des">
     <h3>Casual Collection</h3>
     <p>Discover our versatile men's casual wear collection, where comfort meets contemporary fashion.</p>
-    {category && <LindaSlider products={getProducts().filter(item => item.type === "Casual")}cartColor='white' />}
+    {category && <LindaSlider products={getProducts().filter(item => item.type === "Casual")} cartColor='white' />}
     </div>
 
 <div className="Des">

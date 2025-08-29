@@ -132,7 +132,7 @@ return (
     </div>
 
       {/* SLIDER */}
-    {category && <LindaSlider products={getProducts()} />}
+    {category && <LindaSlider products={getProducts()} cartColor='' />}
     </div>
 );
 }

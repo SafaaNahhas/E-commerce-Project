@@ -103,7 +103,7 @@ const handleClick = (product) => {
   <div
     key={item.id}
     className="product-card"
-    onClick={() => handleClick(item)} // ← ADD THIS
+    onClick={() => handleClick(item)} 
   >
     <div className="product-img-wrapper">
       <img src={item.image} alt={item.name} />
@@ -122,7 +122,7 @@ const handleClick = (product) => {
 
           <button className="view-btn" onClick={() => setShowAll(!showAll)}>
             {showAll ? "View Less" : "View More"}
-            <span className={`arrow-icon ${showAll ? "up" : "down"}`}>⌄</span>
+            <img src="public/assets/img/Home_Page/discover_fashion/Icon.svg" className={`arrow-icon ${showAll ? "up" : "down"}`}/>
           </button>
         </>
       )}

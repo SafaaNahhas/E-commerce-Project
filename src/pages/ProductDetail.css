@@ -9,7 +9,7 @@
     .ImgCon{
         width: 37.135vw;
         height: fit-content;
-        background: #F7F7F8;
+        background: var(--greyBG-color);
         border-radius: 20px;
         img{
             width: 100%;
@@ -26,12 +26,34 @@
     .TopLeft{
         width: 21.14vw;
         margin-right: 20px;
-        span{
+        .FirstLine{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            span{
             margin-bottom: 6px;
             font-weight: var(--fw-regular);
             font-size: var(--fs-18);
             color: var(--text-color);
         }
+        .ManyLeft{
+            width: 72px;
+            background-color: var(--yellowBG-color);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p{
+                font-weight: var(--fw-medium);
+                font-size: var(--fs-14);
+                color: var(--subtitle-color);
+                
+                
+            }
+        }
+        }
+        
 
         h2{
             margin-bottom: 14px;
@@ -41,7 +63,6 @@
         }
         p{
             color: var(--subtitle-color);
-            font-family: Manrope;
             font-weight: 700;
             font-size: 30px;
         }
@@ -52,6 +73,7 @@
         gap: 10px;
         button{
             width: 10.364vw;
+            min-width: 130px;
             height: fit-content;
             padding: 18px 0;
             border: 1px solid var(--lightGreyBG-color);
@@ -63,11 +85,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
             img{
                 width: 20px;
                 margin-right: 10px;
                 }
         }
+        button.active {
+            background-color: var(--subtitle-color);
+            color: var(--White-color);
+            border-color: var(--subtitle-color);
+}
     }
     }
     .Middle{
@@ -76,32 +104,338 @@
         padding: 30px;
         border: 1px solid var(--lightGreyBG-color);
         border-radius: 20px;
+        h3{
+                font-weight: var(--fw-medium);
+                font-size: var(--fs-18);
+                color: var(--subtitle-color);
+                margin-bottom: 6px;
+            }
+            p{
+                font-weight: var(--fw-regular);
+                font-size: var(--fs-18);
+                color: var(--text-color);
+                margin-bottom: 20px;
+            }
         .MiddleLeft{
             width: 19.583vw;
+            
+            
+            .Colors{
+                width: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid var(--lightGreyBG-color);
+                border-radius: 100px;
+                padding: 8px;
+                div{
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 100%;
+                }
+                .Black{
+                    background-color: var(--subtitle-color);
+                }
+                .Red{
+                    background-color: #DAA573;
+                }
+                .Yellow{
+                    background-color: #DAD673;
+                }
+            }
 
         }
         .MiddleRight{
             .Sizes{
                 display: flex;
                 flex-direction: row;
+                gap: 10px;
+                div{
+                    width: 48px;
+                    background-color: var(--greyBG-color);
+                    border-radius: 4px;
+                    text-align: center;
+                    padding: 14px 0;
+
+                }
             }
         }
     }
-
     .ShippingInfo{
         border: 1px solid var(--lightGreyBG-color);
         border-radius: 20px;
         padding: 30px;
+        h3{
+            font-weight: var(--fw-medium);
+            font-size: var(--fs-20);
+            margin-bottom: 20px;
+            color: var(--subtitle-color);
+
+        }
         ul{
             padding-left: 30px;
+            li{
+                font-weight: var(--fw-regular);
+                font-size: var(--fs-18);
+                color: var(--text-color);
+                padding-bottom: 14px;
+                span{
+                    font-weight: var(--fw-medium);
+                    color: var(--subtitle-color);
+                }
+            }
         }
     }
     .Features{
         border: 1px solid var(--lightGreyBG-color);
         border-radius: 20px;
         padding: 30px;
+        margin-bottom: 200px;
+        h3{
+            font-weight: var(--fw-medium);
+            font-size: var(--fs-20);
+            margin-bottom: 20px;
+            color: var(--subtitle-color);
+        }
         ul{
             padding-left: 30px;
+            li{
+                font-weight: var(--fw-regular);
+                font-size: var(--fs-18);
+                color: var(--text-color);
+                padding-bottom: 14px;}
         }
     }
 }
+
+@media (max-width: 1440px) {
+    .ProductDet{
+    width: calc(100vw - 160px);
+    margin-top: 80px;
+    .ImgCon{
+        width: 38.88vw;
+    }
+    
+.Description{
+    gap: 16px;
+}
+    .Top{
+    .TopLeft{
+        width: 24.7vw;
+        margin-right: 16px;
+        .FirstLine{
+            gap: 6px;
+            span{
+            font-size: var(--fs-16);
+        }
+        .ManyLeft{
+            width: 68px;
+        }
+        }
+        h2{
+            margin-bottom: 10px;
+            font-size: var(--fs-20);
+        }
+        p{
+            font-size: var(--fs-24);
+        }
+    }
+    .TopRight{
+        button{
+            padding: 14px 0;
+            font-size: var(--fs-14);
+            img{
+                width: 24px;
+                margin-right: 8px;
+                }
+        }
+    }
+    }
+    .Middle{
+        gap: 16px;
+        padding: 24px;
+        h3{
+                font-size: var(--fs-16);
+                margin-bottom: 4px;
+            }
+            p{
+                font-size: var(--fs-16);
+                margin-bottom: 16px;
+            }
+        .MiddleLeft{
+            width: 21.12vw;
+            .Colors{
+                width: 86px;
+                padding: 8px;
+                div{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+        }
+        .MiddleRight{
+            .Sizes{
+                gap: 6px;
+                div{
+                    width: 34px;
+                    padding: 12px 0;
+
+                }
+            }
+        }
+    }
+    .ShippingInfo{
+        padding: 24px;
+        h3{
+            font-size: var(--fs-18);
+            margin-bottom: 16px;
+        }
+        ul{
+            padding-left: 30px;
+            li{
+                font-size: var(--fs-16);
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .Features{
+        padding: 24px;
+        margin-bottom: 150px;
+        h3{
+            font-size: var(--fs-18);
+            margin-bottom: 16px;
+        }
+        ul{
+            padding-left: 30px;
+            li{
+                font-size: var(--fs-16);
+                padding-bottom: 10px;}
+        }
+    }
+}
+}
+
+@media (max-width: 920px) {
+    .ProductDet{
+    width: calc(100vw - 32px);
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 40px;
+    .ImgCon{
+        width: calc(100vw - 32px);
+        img{
+            
+        }
+    }
+    
+.Description{
+    gap: 16px;
+}
+    .Top{
+        flex-direction: column;
+    .TopLeft{
+        width: calc(50vw - 16px);
+        margin-right: 20px;
+        .FirstLine{
+            gap: 6px;
+            span{
+            margin-bottom: 6px;
+            font-size: var(--fs-14);
+        }
+        .ManyLeft{
+            width: 57px;
+
+            p{
+                font-size: var(--fs-12);
+            }
+        }
+        }
+        
+        .ChangeD{
+            display: flex;
+            flex-direction: row;
+            width: calc(100vw - 32px);
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            h2{
+            margin-bottom: 0px;
+            font-size: var(--fs-18);
+        }
+        p{
+            font-size: 22px;
+        }
+        }
+        
+    }
+    .TopRight{
+        justify-content: space-between;
+        button{
+            width: 45.364vw;
+            font-size: var(--fs-14);
+            img{
+                width: 24px;
+                }
+        }
+    }
+    }
+    .Middle{
+        gap: 10px;
+        padding: 20px;
+        h3{
+                font-size: var(--fs-14);
+                margin-bottom: 4px;
+            }
+            p{
+                font-size: var(--fs-14);
+                margin-bottom: 10px;
+            }
+        .MiddleLeft{
+            width: calc(50vw - 16px);
+            .Colors{
+                width: 86px;
+                div{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+        }
+        .MiddleRight{
+            .Sizes{
+                div{
+                    width: 34px;
+
+                }
+            }
+        }
+    }
+    .ShippingInfo{
+        padding: 20px;
+        h3{
+            font-size: var(--fs-16);
+
+        }
+        ul{
+            padding-left: 20px;
+            li{
+                font-size: var(--fs-14);
+                padding-bottom: 8px;
+            }
+        }
+    }
+    .Features{
+        padding: 20px;
+        margin-bottom: 80px;
+        h3{
+        font-size: var(--fs-16);
+        ul{
+            padding-left: 30px;
+            li{
+                font-size: var(--fs-14);
+                padding-bottom: 8px;}
+        }
+    }
+}
+}}
