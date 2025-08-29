@@ -96,6 +96,13 @@
             color: var(--White-color);
             border-color: var(--subtitle-color);
 }
+        button.active img {
+            filter: brightness(0) invert(1); /* makes icon white */
+            
+}
+.Sp{
+                filter: brightness(95%) invert(1);
+            }
     }
     }
     .Middle{
@@ -157,6 +164,10 @@
                     text-align: center;
                     padding: 14px 0;
 
+                }
+                div.active{
+                    background-color: var(--subtitle-color);
+                    color: var(--White-color);
                 }
             }
         }

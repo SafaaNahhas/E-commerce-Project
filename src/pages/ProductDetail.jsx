@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 import { useLocation } from 'react-router-dom'
 import { Reviwes } from '../components/HomePage/Product_details/Reviews/Reviwes'
 import './ProductDetail.css';
@@ -7,6 +7,10 @@ import FAQSection from '../components/ProductDetail/FAQSection/FAQSection';
 const ProductDetail = () => {
   const location = useLocation();
 const product = location.state?.product;
+
+const [selected, setSelected] = useState(null);
+
+  const handleSelect = (btn) => setSelected(btn);
 
 if (!product) {
   return <p>Product not found!</p>;
@@ -28,9 +32,30 @@ if (!product) {
           
         </div>
         <div className="TopRight">
-          <button><img src="/assets/img/product_detail_page/product_detail/buynow_Icon.png" alt="" />Buy Now</button>
-          <button><img src="/assets/img/product_detail_page/product_detail/cart_Icon.png" alt="" />Add To Cart</button>
-        </div>
+      <button
+        className={selected === "buy" ? "active" : ""}
+        onClick={() => handleSelect("buy")}
+      >
+        <img
+        className="Sp"
+          src="/assets/img/product_detail_page/product_detail/buynow_Icon.png"
+          alt=""
+          
+        />
+        Buy Now
+      </button>
+
+      <button
+        className={selected === "cart" ? "active" : ""}
+        onClick={() => handleSelect("cart")}
+      >
+        <img
+          src="/assets/img/product_detail_page/product_detail/cart_Icon.png"
+          alt=""
+        />
+        Add To Cart
+      </button>
+    </div>
         </div>
         <div className="Middle">
           <div className="MiddleLeft">
@@ -48,11 +73,16 @@ if (!product) {
             <p>Classic Fit</p>
             <h3>Sizes</h3>
             <div className="Sizes">
-              <div>S</div>
-              <div>M</div>
-              <div>L</div>
-              <div>XL</div>
-              <div>XXL</div>
+              <div className={selected === "S" ? "active" : ""}
+              onClick={() => handleSelect("S")}>S</div>
+              <div className={selected === "M" ? "active" : ""}
+              onClick={() => handleSelect("M")}>M</div>
+              <div className={selected === "L" ? "active" : ""}
+              onClick={() => handleSelect("L")}>L</div>
+              <div className={selected === "XL" ? "active" : ""}
+              onClick={() => handleSelect("XL")}>XL</div>
+              <div className={selected === "XXL" ? "active" : ""}
+              onClick={() => handleSelect("XXL")}>XXL</div>
             </div>
           </div>
         </div>
