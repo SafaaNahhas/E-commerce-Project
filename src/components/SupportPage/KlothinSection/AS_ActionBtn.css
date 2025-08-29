@@ -1,0 +1,74 @@
+
+.As-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 24px;
+    border-radius: 32px;
+    border: 1px solid var(--lightGreyBG-color);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-18);
+    cursor: pointer;
+
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.As-btn-label {
+    white-space: nowrap;
+}
+.As-btn-icon {
+    font-size: var(--fs-18);
+    flex-shrink: 0;
+}
+.As-btn--outline {
+    background: var(--White-color);
+    color: var(--title-color);
+    border-color: var(--lightGreyBG-color);
+}
+
+.As-btn--outline:hover {
+    background: var(--shadow-color);
+}
+
+.As-btn--outline:active {
+    background: var(--title-color);
+    color: var(--White-color);
+    transform: scale(.97);
+}
+
+.As-btn--outline:active .As-btn-icon {
+    color: var(--White-color);
+}
+
+.As-btn--filled {
+    background: var(--title-color);
+    color: var(--White-color);
+    border-color: transparent;
+}
+
+.As-btn--filled:hover {
+    background: var(--title-color);
+}
+
+.As-btn--filled:active {
+    background: var(--subtitle-color);
+    transform: scale(.97);
+}
+
+.As-btn:focus-visible {
+    outline: 2px solid rgba(0, 0, 0, .2);
+    outline-offset: 2px;
+}
+
+@media (max-width: 1440px) {
+    .As-btn {
+        gap: 6px;
+        padding: 14px 20px;
+        font-size: var(--fs-14);
+    }
+    .As-btn-icon {
+        font-size: var(--fs-14);
+    }
+}
