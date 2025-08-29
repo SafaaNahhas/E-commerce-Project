@@ -131,7 +131,12 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   cursor: pointer;
   font-size: 20px;
-}}
+}
+.arrow.active {
+  background: var(--subtitle-color);  /* background changes when selected */
+  color: var(--white-color);          /* icon color changes too */
+}
+}
 
 @media (max-width: 1440px){
 

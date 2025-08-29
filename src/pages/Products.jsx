@@ -33,15 +33,47 @@ const Menwear = [
 ];
 
 const Womenwear = [
-    { id: 1, name: "Summer Dress", price: "$59.99", image: "/assets/img/Home_Page/discover_fashion/ClassicPoloShirt.png", type: "Casual" },
-    { id: 2, name: "Elegant Gown", price: "$199.99", image: "/assets/img/Home_Page/discover_fashion/ClassicPoloShirt.png", type: "Formal" },
-    { id: 3, name: "Party Heels", price: "$79.99", image: "/assets/img/Home_Page/discover_fashion/CozyComfortHoodie.png", type: "Party" }
+    { id: 1, name: "Summer Dress", price: "$59.99", image: "/assets/img/Products_Page/Women’s_wear/Formal1.png", type: "Formal" },
+    { id: 2, name: "Elegant Gown", price: "$199.99", image: "/assets/img/Products_Page/Women’s_wear/Formal2.png", type: "Formal" },
+    { id: 3, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Formal3.png", type: "Formal" },
+    { id: 4, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Formal4.png", type: "Formal" },
+    { id: 5, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Formal5.png", type: "Formal" },
+    { id: 6, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Formal6.png", type: "Formal" },
+    { id: 7, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Casual1.png", type: "Casual" },
+    { id: 8, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Casual2.png", type: "Casual" },
+    { id: 9, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Casual3.png", type: "Casual" },
+    { id: 10, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Casual4.png", type: "Casual" },
+    { id: 11, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Casual5.png", type: "Casual" },
+    { id: 12, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Casual6.png", type: "Casual" },
+    { id: 13, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Active1.png", type: "Party" },
+    { id: 14, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Active2.png", type: "Party" },
+    { id: 15, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Active3.png", type: "Party" },
+    { id: 16, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Active4.png", type: "Party" },
+    { id: 17, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Active5.png", type: "Party" },
+    { id: 18, name: "Party Heels", price: "$79.99", image: "/assets/img/Products_Page/Women’s_wear/Active6.png", type: "Party" },
+
 ];
 
 const Kidswear = [
-    { id: 1, name: "Kids T-shirt", price: "$19.99", image: "/assets/img/Home_Page/discover_fashion/ClassicDenimJeans.png", type: "Casual" },
-    { id: 2, name: "School Uniform", price: "$49.99", image: "/assets/img/Home_Page/discover_fashion/CozyComfortHoodie.png", type: "Formal" },
-    { id: 3, name: "Party Dress", price: "$59.99", image: "/assets/img/Home_Page/discover_fashion/CozyComfortHoodie.png", type: "Party" }
+    { id: 1, name: "Kids T-shirt", price: "$19.99", image: "/assets/img/Products_Page/Kids_wear/Active1.png", type: "Party" },
+    { id: 2, name: "School Uniform", price: "$49.99", image: "/assets/img/Products_Page/Kids_wear/Active2.png", type: "Party" },
+    { id: 3, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Active3.png", type: "Party" },
+    { id: 4, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Active4.png", type: "Party" },
+    { id: 5, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Active5.png", type: "Party" },
+    { id: 6, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Active6.png", type: "Party" },
+    { id: 7, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Casual1.png", type: "Casual" },
+    { id: 8, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Casual2.png", type: "Casual" },
+    { id: 9, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Casual3.png", type: "Casual" },
+    { id: 10, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Casual4.png", type: "Casual" },
+    { id: 11, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Casual5.png", type: "Casual" },
+    { id: 12, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Casual6.png", type: "Casual" },
+    { id: 13, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Formal1.png", type: "Formal" },
+    { id: 14, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Formal2.png", type: "Formal" },
+    { id: 15, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Formal3.png", type: "Formal" },
+    { id: 16, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Formal4.png", type: "Formal" },
+    { id: 17, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Formal5.png", type: "Formal" },
+    { id: 18, name: "Party Dress", price: "$59.99", image: "/assets/img/Products_Page/Kids_wear/Formal6.png", type: "Formal" },
+
 ];
 
 const All = [...Menwear, ...Womenwear, ...Kidswear]; // Merge everything

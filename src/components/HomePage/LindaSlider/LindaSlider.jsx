@@ -10,6 +10,18 @@ const handleClick = (product) => {
   navigate(`/product/${product.id}`, { state: { product } });
 };
 
+const [activeArrow, setActiveArrow] = useState(null);
+
+const handlePrevs = () => {
+  sliderRef.current.slickPrev();
+  setActiveArrow("prev"); // mark prev as active
+};
+
+const handleNexts = () => {
+  sliderRef.current.slickNext();
+  setActiveArrow("next"); // mark next as active
+};
+
   const [progress, setProgress] = useState(0);
   const [showAll, setShowAll] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 920);
@@ -85,14 +97,20 @@ const handleClick = (product) => {
                 style={{ width:  `${progress}%`, transitionDuration: "3s" }}
               />
             </div>
-            <div className="progress-arrows-right">
-              <div className="arrow prev" onClick={handlePrev}>
-                &#8249;
-              </div>
-              <div className="arrow next" onClick={handleNext}>
-                &#8250;
-              </div>
-            </div>
+          <div className="progress-arrows-right">
+  <div
+    className={`arrow prev ${activeArrow === "prev" ? "active" : ""}`}
+    onClick={handlePrevs}
+  >
+    &#8249;
+  </div>
+  <div
+    className={`arrow next ${activeArrow === "next" ? "active" : ""}`}
+    onClick={handleNexts}
+  >
+    &#8250;
+  </div>
+</div>
           </div>
         </>
       ) : (
