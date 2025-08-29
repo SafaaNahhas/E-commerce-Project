@@ -26,6 +26,7 @@ import partyHeels from "/assets/img/Home_Page/discover_fashion/CozyComfortHoodie
 import kidsTshirt from "/assets/img/Home_Page/discover_fashion/ClassicDenimJeans.png";
 import schoolUniform from "/assets/img/Home_Page/discover_fashion/CozyComfortHoodie.png";
 import partyDress from "/assets/img/Home_Page/discover_fashion/CozyComfortHoodie.png";
+import { Link } from "react-router-dom";
 
 // =================== PRODUCT ARRAYS =================== //
 const Menwear = [
@@ -118,7 +119,9 @@ return (
             classics, ensuring you find the perfect pieces for every occasion.
         </p>
         </div>
-        <a href="/Products"><button>View All Products</button></a>
+        <Link to="/Products">
+            <button>View All Products</button>
+        </Link>
     </div>
 
       {/* CATEGORY & SUBCATEGORY BUTTONS */}
