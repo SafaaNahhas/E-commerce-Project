@@ -37,7 +37,7 @@
 
 .product-img-wrapper img {
   width: 100%;
-  height: auto;
+  height: 300px;
   display: block;
   border-radius: 20px;           /* match wrapper rounded corners */
   object-fit: cover;             /* ensures full-width & maintains aspect ratio */
