@@ -7,6 +7,12 @@ import './HeroProductDisplay.css';
 import { productData } from '../../../data/productData';
 import { Link } from 'react-router-dom';
 
+import hoodieIndicator from '/assets/img/Home_Page/hero_section/Hoodie_Indicator.png';
+import casualJacketIndicator from '/assets/img/Home_Page/hero_section/Casual_Jacket_Indicator.png';
+import fullSleeveIndicator from '/assets/img/Home_Page/hero_section/Full_Sleeve_Indicator.png';
+
+
+
 const HeroProductDisplay = () => {
     const [selectedColor, setSelectedColor] = useState(productData.colors[0]);
      
@@ -30,19 +36,18 @@ const HeroProductDisplay = () => {
                     </div>
                     
                     <div className="SN-tag-with-arrow SN-hoodie">
-                        <img src="/assets/img/Home_Page/hero_section/Hoodie_Indicator.png" alt="Arrow" className="SN-arrow-image" />
+                        <img src={hoodieIndicator} alt="Arrow" className="SN-arrow-image" />
                         <div className="SN-tag-text">Hoodie</div>
 
                     </div>
 
                     <div className="SN-tag-with-arrow SN-casual-jacket">
                         <div className="SN-tag-text">Casual Jacket</div>
-                        <img src="/assets/img/Home_Page/hero_section/Casual_Jacket_Indicator.png" alt="Arrow" className="SN-arrow-image" />
+                        <img src={casualJacketIndicator} alt="Arrow" className="SN-arrow-image" />
                     </div>
 
                     <div className="SN-tag-with-arrow SN-full-sleeve">
-                        
-                        <img src="/assets/img/Home_Page/hero_section/Full_Sleeve_Indicator.png" alt="Arrow" className="SN-arrow-image" />
+                        <img src={fullSleeveIndicator} alt="Arrow" className="SN-arrow-image" />
                         <div className="SN-tag-text">Full Sleeve</div>
                     </div>
                 </div>
@@ -70,7 +75,7 @@ const HeroProductDisplay = () => {
                     >
                         {selectedColor.images.map((image, index) => (
                             <SwiperSlide key={index}>
-                                <img src={`/assets/img/Home_Page/hero_section/${image}`} alt={productData.productName} className="SN-slider-img"/>
+                                <img src={image} alt={productData.productName} className="SN-slider-img"/>
                             </SwiperSlide>
                         ))}
                     </Swiper>

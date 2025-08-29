@@ -1,15 +1,19 @@
 import './Footer.css';
+import logo from '/public/assets/img/footer/logo.svg';
+import fbIcon from '/public/assets/img/footer/FB_Btn.png';
+import twIcon from '/public/assets/img/footer/TW_Btn.png';
+import liIcon from '/public/assets/img/footer/Li_Btn.png';
 function Footer() {
     return (
         <div className='Footer'>
             <div className="FooterTop">
                 <div className="FooterForm">
                     <div className="SmallScreens">
-                    <img className='Logo' src="/public/assets/img/footer/logo.svg" alt="" />
+                    <img className='Logo' src={logo} alt="" />
                     <div className="Icons">
-                    <img src="/public/assets/img/footer/FB_Btn.png" alt="FacebookIcon" />
-                    <img src="/public/assets/img/footer/TW_Btn.png" alt="TwitterIcon" />
-                    <img src="/public/assets/img/footer/Li_Btn.png" alt="LinkedInIcon" />
+                    <img src={fbIcon}  alt="FacebookIcon" />
+                    <img src={twIcon} alt="TwitterIcon" />
+                    <img src={liIcon} alt="LinkedInIcon" />
                 </div>
                 </div>
                 <div>
@@ -60,9 +64,9 @@ function Footer() {
                     <span>Privacy Policy</span>
                 </div>
                 <div className="middle">
-                    <img src="/public/assets/img/footer/FB_Btn.png" alt="FacebookIcon" />
-                    <img src="/public/assets/img/footer/TW_Btn.png" alt="TwitterIcon" />
-                    <img src="/public/assets/img/footer/Li_Btn.png" alt="LinkedInIcon" />
+                    <img src={fbIcon} alt="FacebookIcon" />
+                    <img src={twIcon} alt="TwitterIcon" />
+                    <img src={liIcon} alt="LinkedInIcon" />
                 </div>
                 <p className='right'>© 2024 Klothink. All rights reserved.</p>
             </div>

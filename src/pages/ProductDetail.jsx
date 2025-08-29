@@ -3,7 +3,8 @@ import { useLocation } from 'react-router-dom'
 import { Reviwes } from '../components/HomePage/Product_details/Reviews/Reviwes'
 import './ProductDetail.css';
 import FAQSection from '../components/ProductDetail/FAQSection/FAQSection';
-
+import buyNowIcon from '/assets/img/product_detail_page/product_detail/buynow_Icon.png';
+import cartIcon from '/assets/img/product_detail_page/product_detail/cart_Icon.png';
 const ProductDetail = () => {
   const location = useLocation();
 const product = location.state?.product;
@@ -38,7 +39,7 @@ if (!product) {
       >
         <img
         className="Sp"
-          src="/assets/img/product_detail_page/product_detail/buynow_Icon.png"
+          src={buyNowIcon}
           alt=""
           
         />
@@ -50,7 +51,7 @@ if (!product) {
         onClick={() => handleSelect("cart")}
       >
         <img
-          src="/assets/img/product_detail_page/product_detail/cart_Icon.png"
+          src={cartIcon}
           alt=""
         />
         Add To Cart

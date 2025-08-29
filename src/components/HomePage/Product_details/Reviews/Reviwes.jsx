@@ -5,40 +5,43 @@ import '../../Testimonials/Testimonials.css';
 import { TestimonialsCard } from '../../TestimonialsCard/TestimonialsCard';
 import Container from '../../../common/Container/Container';
 
+import sarahAvatar from '/assets/img/Home_Page/custers_love/Sarah_Thompson_avatar.png';
+import rajeshAvatar from '/assets/img/Home_Page/custers_love/Rajesh_Patel_avatar.png';
+import emilyAvatar from '/assets/img/Home_Page/custers_love/Emily_Walker_avatar.png';
 
 const testimonialsData = [
   {
-    img: '/assets/img/Home_Page/custers_love/Sarah_Thompson_avatar.png',
+    img: sarahAvatar,
     name: 'Sarah Thompson',
     rating: 5,
     text: "Klothink exceeded my expectations. The gown's quality and design made me feel like a queen. Fast shipping, too!",
   },
   {
-    img: '/assets/img/Home_Page/custers_love/Rajesh_Patel_avatar.png',
+    img: rajeshAvatar,
     name: 'Rajesh Patel',
     rating: 5,
     text: 'Absolutely love the style and warmth of the jacket. A perfect blend of fashion and functionality!',
   },
   {
-    img: '/assets/img/Home_Page/custers_love/Emily_Walker_avatar.png',
+    img: emilyAvatar,
     name: 'Emily Walker',
     rating: 5,
     text: 'Adorable and comfortable! My daughter loves her new outfit. Thank you Klothink for dressing our little fashionista.',
   },
   {
-    img: '/assets/img/Home_Page/custers_love/Sarah_Thompson_avatar.png',
+    img: sarahAvatar,
     name: 'Sarah Thompson',
     rating: 3,
     text: "Klothink exceeded my expectations. The gown's quality and design made me feel like a queen. Fast shipping, too!",
   },
   {
-    img: '/assets/img/Home_Page/custers_love/Rajesh_Patel_avatar.png',
+    img: rajeshAvatar,
     name: 'Rajesh Patel',
     rating: 2,
     text: 'Absolutely love the style and warmth of the jacket. A perfect blend of fashion and functionality!',
   },
   {
-    img: '/assets/img/Home_Page/custers_love/Emily_Walker_avatar.png',
+    img: emilyAvatar,
     name: 'Emily Walker',
     rating: 1,
     text: 'Adorable and comfortable! My daughter loves her new outfit. Thank you Klothink for dressing our little fashionista.',

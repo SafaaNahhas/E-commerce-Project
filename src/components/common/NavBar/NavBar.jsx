@@ -16,7 +16,6 @@ const Navbar = () => {
     };
     useEffect(() => {
     const handleResize = () => {
-        // TODO
         if (window.innerWidth > 920 && isMenuOpen) {
             setIsMenuOpen(false);
         }
@@ -32,8 +31,6 @@ const Navbar = () => {
                 <NavLink to="/" text="Home" />
                 <NavLink to="/products" text="Products"  />
                 <NavLink to="/Dashboard" text="Dashboard" />
-                {/* <NavLink to="/" className="SN-nav-link">Home</NavLink>
-                <NavLink to="/products" className="SN-nav-link">Products</NavLink> */}
             </div>
             <div className="SN-navbar-logo">
                 <Logo />

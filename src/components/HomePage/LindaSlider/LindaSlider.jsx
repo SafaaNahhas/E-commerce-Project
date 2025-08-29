@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import "./LindaSlider.css";
+import cartButton from '/assets/img/navbar/cartBtn.png';
+import viewMoreIcon from '/assets/img/Home_Page/discover_fashion/Icon.svg';
 
 export default function LindaSlider({ products, cartColor = "yellow" }) {
 const navigate = useNavigate();
@@ -80,7 +82,8 @@ const handleNexts = () => {
         <img src={item.image} alt={item.name} />
       </div>
       <button className={`cart-btn ${cartColor === "white" ? "white" : ""}`}>
-        <img src="/assets/img/navbar/cartBtn.png" alt="" />
+        {/* <img src="/assets/img/navbar/cartBtn.png" alt="" /> */}
+        <img src={cartButton} alt="" />
       </button>
     </div>
     <div className="product-name">{item.name}</div>
@@ -129,7 +132,8 @@ const handleNexts = () => {
         className={`cart-btn ${cartColor === "white" ? "white" : ""}`}
         onClick={(e) => e.stopPropagation()} // ← Prevent navigation when cart is clicked
       >
-        <img src="/assets/img/navbar/cartBtn.png" alt="" />
+        {/* <img src="/assets/img/navbar/cartBtn.png" alt="" /> */}
+         <img src={cartButton} alt="" />
       </button>
     </div>
     <div className="product-name">{item.name}</div>
@@ -140,7 +144,8 @@ const handleNexts = () => {
 
           <button className="view-btn" onClick={() => setShowAll(!showAll)}>
             {showAll ? "View Less" : "View More"}
-            <img src="public/assets/img/Home_Page/discover_fashion/Icon.svg" className={`arrow-icon ${showAll ? "up" : "down"}`}/>
+            {/* <img src="public/assets/img/Home_Page/discover_fashion/Icon.svg" className={`arrow-icon ${showAll ? "up" : "down"}`}/> */}
+            <img src={viewMoreIcon} className={`arrow-icon ${showAll ? "up" : "down"}`}/>
           </button>
         </>
       )}

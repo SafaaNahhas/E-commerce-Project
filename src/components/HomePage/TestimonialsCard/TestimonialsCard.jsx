@@ -1,6 +1,7 @@
 import React from 'react';
 import './TestimonialsCard.css'; 
 import { ExpandableText } from '../../common/ExpandableText/ExpandableText'; 
+import quoteIcon from '/assets/img/Home_Page/customers_love/double_cotation.png';
 
 const StarRating = ({ rating }) => (
   <div className="star-rating">
@@ -35,7 +36,8 @@ export const TestimonialsCard = ({ img, name, rating, text }) => {
           <h3>{name}</h3>
           <StarRating rating={rating} />
         </div>
-        <img src="/assets/img/Home_Page/customers_love/double_cotation.png" alt="quote" className="quote-icon" />
+        {/* <img src="/assets/img/Home_Page/customers_love/double_cotation.png" alt="quote" className="quote-icon" /> */}
+        <img src={quoteIcon} alt="quote" className="quote-icon" />
 
       </div>
       {/* <p className="card-text">{text}</p> */}
