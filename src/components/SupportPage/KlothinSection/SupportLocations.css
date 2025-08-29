@@ -1,0 +1,128 @@
+.AS-loc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.AS-loc-subtitle {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-medium);
+    line-height: 150%;
+    color: var(--text-color);
+}
+
+.AS-loc-cardsBox {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px;
+    padding: 50px;
+    border: 1px solid var(--lightGreyBG-color);
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+.AS-loc-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 0;
+}
+
+.AS-loc-card-head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.AS-loc-card-title {
+    font-size: 1.375rem;
+    font-weight: var(--fw-semibold);
+    color: var(--subtitle-color);
+    line-height: 1.25;
+}
+
+.AS-loc-card-addr {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-regular);
+    color: var(--text-color);
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.AS-loc-card-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.AS-loc-card-actionWrap-left,
+.AS-loc-card-actionWrap-right {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.AS-loc-card-actions .As-btn {
+    width: 100%;
+}
+
+.AS-loc,
+.AS-loc-cardsBox,
+.AS-loc-card {
+    min-width: 0;
+}
+
+
+@media (max-width: 1440px) {
+    .AS-loc-subtitle {
+        font-size: var(--fs-body);
+    }
+
+    .AS-loc-cardsBox {
+        gap: 40px;
+        padding: 40px;
+        border-radius: 16px;
+    }
+
+    .AS-loc-card {
+        gap: 24px;
+    }
+
+    .AS-loc-card-head {
+        gap: 6px;
+    }
+
+    .AS-loc-card-title {
+        font-size: var(--fs-18);
+    }
+
+    .AS-loc-card-addr {
+        font-size: var(--fs-14);
+    }
+}
+
+@media (max-width: 920px) {
+    .AS-loc-subtitle {
+        font-size: var(--fs-14);
+    }
+
+    .AS-loc {
+        gap: 16px;
+    }
+
+    .AS-loc-cardsBox {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 24px;
+    }
+
+    .AS-loc-card {
+        gap: 20px;
+    }
+
+    .AS-loc-card-title {
+        font-size: var(--fs-body);
+    }
+
+}
