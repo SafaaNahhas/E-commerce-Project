@@ -81,27 +81,32 @@
 }
 
 .embla__slide {
-  flex: 0 0 33.333%; /* ✅ 3 كروت للديسكتوب */
+  flex: 0 0 33.333%; 
   min-width: 0;
   /* padding-left: 20px; */
    box-sizing: border-box; 
 }
 
-/* أزرار التنقل */
+
 .embla__button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  background: black;
+  /*transform: translateY(-50%);*/
+  background: transparent;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 50%;
-  font-size: 1.5rem;
+   width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;        
+  justify-content: center;   
+  font-size: 2rem;
   padding: 10px;
   z-index: 10;
   opacity: 0.8;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease;
 }
 .embla-buttons {
     margin-top: 15px;
@@ -110,10 +115,7 @@
     gap: 15px;
  
   }
- /* .embla__button {
-    position: static; 
-    transform: none;
-  }*/
+
 
 .embla__button:hover {
   opacity: 1;
@@ -123,16 +125,31 @@
   left: -50px;
      width: 50px;
     height: 50px;
+     background: white; 
+      color: black; 
+      border: 1px solid #ddd;  
+    /* color: transparent;*/
+}
+.embla__button--prev:hover {
+ /* color: black; */
+   background: black;
+  color: white;
+}
+
+.embla__button--next:hover {
+  color: gray; 
 }
 
 .embla__button--next {
   right: -50px;
      width: 50px;
     height: 50px;
+   background: black;          /* الخلفية سوداء */
+  color: white; 
 }
 
-/* موبايل: كرت واحد */
-@media (max-width: 768px) {
+
+@media (max-width: 920px) {
   .testimonials-header {
     flex-direction: column;
     align-items: flex-start;
@@ -147,13 +164,13 @@
   }
 
   .testimonials-description {
-    margin-bottom: 1.5rem; /* مسافة تحت الفقرة */
+    margin-bottom: 1.5rem; 
   }
 
   .view-all-btn {
     margin-top: 0.5rem;
-    margin-left: 0;   /* يلغي المسافة الجانبية */
-    align-self:  flex-start; /* يخلي الزر بالوسط */
+    margin-left: 0;   
+    align-self:  flex-start; 
   }
 
   .embla-buttons {
@@ -165,7 +182,7 @@
   }
 
   .embla__button {
-    position: static; /* نلغي الـ absolute */
+    position: static;
     transform: none;
   }
   .embla__slide {

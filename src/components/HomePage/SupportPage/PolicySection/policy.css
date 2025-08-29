@@ -1,7 +1,7 @@
 /* Policy.css */
 
 .policy-section {
-  background-color: #ffffff; /* Light background for the section */
+  background-color: #ffffff; 
   padding: 40px 0;
   margin-bottom: 30px;
   border-top: 1px solid #eee;
@@ -77,15 +77,15 @@
 .policy-details-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   border-top: 1px solid #eee; /* Top border for the grid container */
+   border-top: 1px solid #eee; 
   border-left: 1px solid #eee;
 }
 
 .policy-detail-card {
   background-color: #fff;
   border: none;
-  border-right: 1px solid #eee; /* Right border to separate columns */
-  border-bottom: 1px solid #eee; /* Bottom border to separate rows */
+  border-right: 1px solid #eee; 
+  border-bottom: 1px solid #eee; 
   padding: 20px;
   
   
@@ -106,7 +106,7 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .policy-header {
     flex-direction: column;
     align-items: flex-start;
@@ -124,7 +124,6 @@
   
   .policy-details-grid {
     grid-template-columns: 1fr; 
-    /* Stack cards vertically on small screens */
     border-left: none;
 
 }
