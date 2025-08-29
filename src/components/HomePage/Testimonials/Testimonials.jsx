@@ -72,7 +72,18 @@ export const Testimonials = () => {
               Explore the heartfelt testimonials shared by those who have experienced the magic of Klothink fashion.
             </p>
           </div>
-          <button className="view-all-btn">View All Testimonials</button>
+          <button
+  className="view-all-btn"
+  onClick={() => {
+    const section = document.querySelector('.AS-seam'); 
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+>
+  View All Testimonials
+</button>
+
         </div>
         
         <div className="embla-wrapper">
