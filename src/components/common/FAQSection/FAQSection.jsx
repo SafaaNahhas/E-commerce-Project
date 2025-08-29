@@ -95,7 +95,12 @@ export default function FAQSection({
                                 {/* safaa */}
                                 <div className="AS-faq-answer" style={{ maxHeight: isOpen ? "none" : 0 }}>
                                     
+                                    {/* <ExpandableText text={item.a} maxHeight={60} /> */}
+                                    {isOpen ? (
+                                    <p>{item.a}</p>
+                                    ) : (
                                     <ExpandableText text={item.a} maxHeight={60} />
+                                    )}
                                       {isDashboard && (
                                         <div className="AS-faq-actions">
                                             <button 

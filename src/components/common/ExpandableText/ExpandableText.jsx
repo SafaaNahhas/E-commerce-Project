@@ -1,5 +1,3 @@
-// src/common/ExpandableText/ExpandableText.js
-
 import React, { useState, useRef, useLayoutEffect } from 'react';
 import './ExpandableText.css'; 
 
@@ -10,7 +8,8 @@ export const ExpandableText = ({ text, maxHeight }) => {
 
   useLayoutEffect(() => {
     if (textRef.current) {
-      setIsOverflowing(textRef.current.scrollHeight > maxHeight);
+      const isHeightOverflowing = textRef.current.scrollHeight > maxHeight;
+      setIsOverflowing(isHeightOverflowing);
     }
   }, [text, maxHeight]);
 
