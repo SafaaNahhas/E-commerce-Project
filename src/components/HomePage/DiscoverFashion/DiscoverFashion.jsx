@@ -4,10 +4,32 @@ import LindaSlider from "../LindaSlider/LindaSlider";
 
 // =================== PRODUCT ARRAYS =================== //
 const Menwear = [
-{ id: 1, name: "Classic Denim Jeans", price: "$49.99", image: "/assets/img/Home_Page/discover_fashion/Pants.png", type: "Casual" },
-{ id: 2, name: "Business Suit", price: "$149.99", image: "/assets/img/Home_Page/discover_fashion/ClassicDenimJeans.png", type: "Formal" },
-{ id: 3, name: "Party Blazer", price: "$89.99", image: "/assets/img/Home_Page/discover_fashion/ClassicDenimJeans.png", type: "Party" },
-{ id: 4, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Home_Page/discover_fashion/ClassicDenimJeans.png", type: "Casual" }
+    { id: 1, name: "Performance Jacket", price: "$49.99", image: "/assets/img/Products_Page/Men’s_wear/Active_Lifestyle/Performance_Jacket.png", type: "Party" },
+    { id: 2, name: "High_Performance Leggings", price: "$149.99", image: "/assets/img/Products_Page/Men’s_wear/Active_Lifestyle/High_Performance_Leggings.png", type: "Party" },
+    { id: 3, name: "Lightweight Running Shoes", price: "$89.99", image: "/assets/img/Products_Page/Men’s_wear/Active_Lifestyle/Lightweight_Running_Shoes.png", type: "Party" },
+    { id: 4, name: "Quick Dry Athletic Shorts", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Active_Lifestyle/Quick_Dry_Athletic_Shorts.png", type: "Party" },
+    { id: 5, name: "Performance Jacket", price: "$49.99", image: "/assets/img/Products_Page/Men’s_wear/Active_Lifestyle/Performance_Jacket.png", type: "Party" },
+    { id: 6, name: "High Performance Leggings", price: "$149.99", image: "/assets/img/Products_Page/Men’s_wear/Active_Lifestyle/High_Performance_Leggings.png", type: "Party" },
+    { id: 7, name: "Lightweight Running Shoes", price: "$89.99", image: "/assets/img/Products_Page/Men’s_wear/Active_Lifestyle/Lightweight_Running_Shoes.png", type: "Party" },
+    { id: 8, name: "Quick Dry Athletic Shorts", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Active_Lifestyle/Quick_Dry_Athletic_Shorts.png", type: "Party" },
+
+    { id: 9, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Formal_Elegance/Black_French_Cuff Shirt.png", type: "Formal" },
+    { id: 10, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Formal_Elegance/Black_Leather_Oxford_Shoes.png", type: "Formal" },
+    { id: 11, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Formal_Elegance/Classic_Black_Leather_Belt.png", type: "Formal" },
+    { id: 12, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Formal_Elegance/Classic_Charcoal_Suit.png", type: "Formal" },
+    { id: 13, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Formal_Elegance/Black_French_Cuff Shirt.png", type: "Formal" },
+    { id: 14, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Formal_Elegance/Black_Leather_Oxford_Shoes.png", type: "Formal" },
+    { id: 15, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Formal_Elegance/Classic_Black_Leather_Belt.png", type: "Formal" },
+    { id: 16, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Formal_Elegance/Classic_Charcoal_Suit.png", type: "Formal" },
+
+    { id: 17, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Casual_Collection/Chino Pants.png", type: "Casual" },
+    { id: 18, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Casual_Collection/Classic Denim Jeans.png", type: "Casual" },
+    { id: 19, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Casual_Collection/Classic Polo Shirt.png", type: "Casual" },
+    { id: 20, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Casual_Collection/Cozy Comfort Hoodie.png", type: "Casual" },
+    { id: 21, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Casual_Collection/Chino Pants.png", type: "Casual" },
+    { id: 22, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Casual_Collection/Classic Denim Jeans.png", type: "Casual" },
+    { id: 23, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Casual_Collection/Classic Polo Shirt.png", type: "Casual" },
+    { id: 24, name: "Casual Hoodie", price: "$39.99", image: "/assets/img/Products_Page/Men’s_wear/Casual_Collection/Cozy Comfort Hoodie.png", type: "Casual" },
 ];
 
 const Womenwear = [
@@ -110,7 +132,7 @@ return (
     </div>
 
       {/* SLIDER */}
-    {category && <LindaSlider products={getProducts()} />}
+    {category && <LindaSlider products={getProducts()} cartColor='' />}
     </div>
 );
 }

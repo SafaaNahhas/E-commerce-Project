@@ -99,25 +99,30 @@ const handleClick = (product) => {
         <>
           {/* Mobile vertical view */}
           <div className={`vertical-list ${showAll ? "show-all" : ""}`}>
-            {products.slice(0, showAll ? products.length : 2).map((item) => (
-              <div key={item.id} className="product-card">
-                <div className="product-img-wrapper">
-                  <img src={item.image} alt={item.name} />
-                  <button
-                    className={`cart-btn ${cartColor === "white" ? "white" : ""}`}
-                  >
-                    <img src="/assets/img/navbar/cartBtn.png" alt="" />
-                  </button>
-                </div>
-                <div className="product-name">{item.name}</div>
-                <div className="product-price">{item.price}</div>
-              </div>
-            ))}
+           {products.slice(0, showAll ? products.length : 2).map((item) => (
+  <div
+    key={item.id}
+    className="product-card"
+    onClick={() => handleClick(item)} 
+  >
+    <div className="product-img-wrapper">
+      <img src={item.image} alt={item.name} />
+      <button
+        className={`cart-btn ${cartColor === "white" ? "white" : ""}`}
+        onClick={(e) => e.stopPropagation()} // ← Prevent navigation when cart is clicked
+      >
+        <img src="/assets/img/navbar/cartBtn.png" alt="" />
+      </button>
+    </div>
+    <div className="product-name">{item.name}</div>
+    <div className="product-price">{item.price}</div>
+  </div>
+))}
           </div>
 
           <button className="view-btn" onClick={() => setShowAll(!showAll)}>
             {showAll ? "View Less" : "View More"}
-            <span className={`arrow-icon ${showAll ? "up" : "down"}`}>⌄</span>
+            <img src="public/assets/img/Home_Page/discover_fashion/Icon.svg" className={`arrow-icon ${showAll ? "up" : "down"}`}/>
           </button>
         </>
       )}

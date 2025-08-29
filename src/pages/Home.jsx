@@ -3,9 +3,11 @@ import HeroSection from "../components/HomePage/HeroSection/HeroSection"
 
 import { Testimonials } from '../components/HomePage/Testimonials/Testimonials'
 import KlothinkExperience from '../components/HomePage/ExperienceSection/KlothinkExperience'
-import FAQSection from "../components/HomePage/FAQSection/FAQSection"
 import SeamlessExperience from "../components/HomePage/SeamlessExperience/SeamlessExperience"
 import DiscoverFashion from "../components/HomePage/DiscoverFashion/DiscoverFashion"
+import FAQSection from "../components/SupportPage/FAQSection/FAQSection"
+
+
 const Home = () => {
   return (
     <>
@@ -15,7 +17,7 @@ const Home = () => {
         <DiscoverFashion />
         <KlothinkExperience/>
         <Testimonials/>
-        <FAQSection />
+        <FAQSection/>
         <SeamlessExperience />
 
     </> 

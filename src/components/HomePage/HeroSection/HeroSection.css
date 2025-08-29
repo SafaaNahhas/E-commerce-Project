@@ -1,27 +1,21 @@
 .hero-section {
-    margin-top: 195px;
+    padding-top: 100px;  
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch; 
     gap: 80px;
-    min-height: calc(100vh - 119px);
-    max-width:1597px ;
-    margin: 0 auto;
-    /* padding: 0 162px;  */
 }
-
 .hero-left-content {
-    min-width: 0;                        
-    height: 100%;                         
+    min-width: 0;                 
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 80px;
     flex: 1 1 844px;
     max-width: 844px;
     box-sizing: border-box; 
     min-width: 0; 
 }
-
 .product-stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -32,46 +26,53 @@
     border-radius: 12px;
     opacity: 1;
     padding: 20px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
 }
-
 .hero-right-content {
     background-color: var(--greyBG-color);
-    height: 100%;
     flex: 1 1 673px;
     max-width: 673px;
-    box-sizing: border-box; 
-    min-width: 0; 
+    box-sizing: border-box;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 40px 20px;
+    /* max-height: 749px; */
+    /* min-height: 69.3518vh; */
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
-
 @media (max-width: 1440px) {
     .hero-section {
-        margin-top: 80px;
-        gap: 60px;
-        min-height: calc(100vh - 347px);
-        padding: 0 82px; 
-    }
-    .hero-left-content {
-        flex: 1 1 80%; 
-    }
-    .hero-right-content {
-          flex: 1 1 auto;
+        padding-top: 80px;
+        gap: 4.166%;
+        margin-bottom: 150px;
     }
     .product-stats {
         gap: 16px;
         padding: 16px;
+        box-shadow: 0px 0px 0px 6px var(--shadow-color);
+    }
+    .hero-right-content {
+        flex: 1 1 544px;
+        border-radius: 16px;
+        padding: 20px 16px;
     }
 }
-
-
-@media (max-width: 920px) {
+/* @media (max-width: 920px) { */
+@media (max-width: 1150px) {
     .hero-section { 
-        padding: 0 16px;
         flex-direction: column;
         gap: 40px;
         max-height: none; 
-        margin-top: 40px;
-        /* padding-top: 20px; */
-
+        padding-top: 40px;
     }
     .hero-left-content {
         height: auto; 
@@ -79,7 +80,6 @@
         max-width: 100%;
         flex: 1 1 100%; 
     }
-
     .hero-right-content {
         min-width: 100%; 
         max-width: 100%;
@@ -88,6 +88,7 @@
     .product-stats {
         gap: 10px;
         padding: 10px;
+        box-shadow: 0px 0px 0px 4px var(--shadow-color);
     }
 }
 
